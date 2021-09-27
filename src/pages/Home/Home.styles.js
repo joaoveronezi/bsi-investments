@@ -4,13 +4,13 @@ export const HomeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #000000;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-
 `;
 
 export const TextWrapper = styled.div`
@@ -23,7 +23,7 @@ export const TextWrapper = styled.div`
 
 export const HomeTitle = styled.h2`
   color: white;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   text-align: center;
@@ -31,18 +31,19 @@ export const HomeTitle = styled.h2`
   span {
     color: #6C3EA4;
   }
+  
 `;
 
 export const AccountButton = styled.button`
-  width: 456px;
-  height: 93px;
+  width: 360px;
+  height: 86px;
   background-color: #6C3EA4;
   color: white;
   border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 32px;
   cursor: pointer;
   margin-top: 93px;
   font-family: 'Inter', sans-serif;
@@ -50,4 +51,13 @@ export const AccountButton = styled.button`
   :hover {
     background-color: #964CDB;
   }
+`;
+
+export const MouseScrollWrapper = styled.a`
+  position: absolute;
+  bottom: 35px;
+
+img {
+  width: 90px;
+}
 `;

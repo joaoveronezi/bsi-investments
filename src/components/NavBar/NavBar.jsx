@@ -35,10 +35,10 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#about">SOBRE A BSI</Nav.Link>
-            <Nav.Link href="#teste1">ASSESSORIA</Nav.Link>
-            <Nav.Link href="#teste2">EMPRESAS</Nav.Link>
-            <Nav.Link href="#teste3">INVESTIMENTOS</Nav.Link>
-            <Nav.Link href="#teste4">CONTATO</Nav.Link>
+            <Nav.Link href="#advice">ASSESSORIA</Nav.Link>
+            <Nav.Link href="#enterprises">EMPRESAS</Nav.Link>
+            <Nav.Link href="#investments">INVESTIMENTOS</Nav.Link>
+            <Nav.Link href="#contact">CONTATO</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link eventKey={2} href="#memes">
