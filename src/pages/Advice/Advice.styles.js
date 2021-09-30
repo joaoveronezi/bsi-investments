@@ -6,11 +6,13 @@ export const AdviceWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   flex-direction: column;
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  
 `;
 export const CardText = styled.div`
   font-family: 'Inter', sans-serif;
@@ -31,6 +33,14 @@ export const CardText = styled.div`
   p:last-child {
     width: 100%;
     max-width: 600px;
+  }
+  @media(max-width: 1024px) {
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
   }
 `;
 

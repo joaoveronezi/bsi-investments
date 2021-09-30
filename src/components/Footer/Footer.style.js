@@ -8,11 +8,14 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  max-height: 700px;
+  height: 100%;
+  min-height: 700px;
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  @media(max-width: 1024px) {
+    padding: 50px;
+  }
 `;
 
 export const IconAndAdressWrapper = styled.div`

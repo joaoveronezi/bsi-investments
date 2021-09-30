@@ -7,12 +7,14 @@ export const AboutContainer = styled.div`
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 export const Main = styled.div`
   width: 60%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,18 +29,30 @@ export const Aside = styled.div`
   width: 40%;
   max-width: 800px;
   img {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 100vh;
     object-fit: cover;
   }
-  
 `;
 
 export const TextWrapper = styled.div`
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 570px;
   color: white;
   margin: 130px auto;
+
+  @media(max-width: 1024px) {
+    margin: 30px auto;
+    padding: 0 30px;
+    h3 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const AboutTitle = styled.h3`

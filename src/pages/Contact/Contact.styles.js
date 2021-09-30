@@ -18,8 +18,10 @@ export const ImageWrapper = styled.div`
 `;
 
 export const IconImage = styled.img`
-  width: 600px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 150px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -27,14 +29,16 @@ export const IconImage = styled.img`
   right: 0;
   text-align: center;
   top: 140px;
+  @media(max-width: 1024px) {
+    max-width: 400px;
+  }
 `;
 
 export const ContactImage = styled.img`
-  height: 100%;
   width: 100%;
-  max-height: 100vh;
-  object-fit: fill;
-  overflow: hidden;
+  max-width: 900px;
+  height: 100vh;
+  object-fit: cover;
 `;
 
 export const TextWrapper = styled.div`

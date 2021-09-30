@@ -10,6 +10,18 @@ export const WhoAreUsWrapper = styled.div`
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  position: relative;
+  @media(max-width: 1024px) {
+    img {
+      width: 150px;
+    }
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -37,4 +49,5 @@ export const CardsContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 70px;
+  
 `;

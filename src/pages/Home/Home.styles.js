@@ -20,7 +20,8 @@ export const TextWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
 `;
 
 export const HomeTitle = styled.h2`

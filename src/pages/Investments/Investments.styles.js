@@ -7,7 +7,8 @@ export const InvestmentsWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: calc(100vh + 80px);
+  height: 100%;
+  min-height: calc(100vh + 80px);
   flex-direction: column;
   color: white;
   font-family: 'Inter', sans-serif;

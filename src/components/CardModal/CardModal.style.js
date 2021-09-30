@@ -17,4 +17,8 @@ export const CardContainer = styled.div`
     line-height: 58px;
     margin-left: 20px;
   }
+  :hover {
+    transition: opacity 0.3s;  
+    opacity: 0.5; 
+  }
 `;

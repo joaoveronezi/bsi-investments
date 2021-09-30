@@ -6,7 +6,7 @@ import { AdviceWrapper, CardText, CardsWrapper } from "./Advice.styles";
 
 const Advice = () => (
   <AdviceWrapper id="advice" style={{ backgroundImage: "url(resources/images/assesoria.jpg)" }}>
-    <TitleWrapper style={{ marginBottom: "50px" }}>
+    <TitleWrapper style={{ marginBottom: "50px", marginTop: window.innerWidth < 1025 ? "100px" : "0" }}>
       <h1>ASSESSORIA</h1>
       <p>Escolha a assessoria alinhada a seu momento de vida</p>
     </TitleWrapper>
@@ -47,7 +47,7 @@ const Advice = () => (
         </p>
       </CardText>
     </CardsWrapper>
-    <CardText>
+    <CardText style={{ marginBottom: window.innerWidth < 1025 ? "100px" : "0" }}>
       <h2>Digital</h2>
       <p>Assessoria digital a partir de R$ 10 mil reais em investimentos</p>
       <img src={dividerIcon} alt="divider" />

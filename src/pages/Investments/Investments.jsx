@@ -22,7 +22,7 @@ const CERTIFICADO_INFO = "Diversificação e acesso a novos mercados, tudo em um
 
 const Investments = () => (
   <InvestmentsWrapper id="investments">
-    <TitleWrapper style={{ marginBottom: "50px" }}>
+    <TitleWrapper style={{ marginBottom: "50px", marginTop: window.innerWidth < 1025 ? "100px" : "0" }}>
       <h1>INVESTIMENTOS</h1>
     </TitleWrapper>
     <CardsWrapper>

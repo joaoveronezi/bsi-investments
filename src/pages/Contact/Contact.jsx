@@ -25,7 +25,6 @@ const Contact = () => (
       </TextWrapper>
     </ContatoWrapper>
     <Footer />
-
   </>
 );
 

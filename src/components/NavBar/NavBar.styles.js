@@ -30,10 +30,16 @@ export const HiddenNavbar = styled.nav`
     line-height: 29px;
     :not(:last-child) {
       margin-right: 50px;
+      @media(max-width: 1024px) {
+        margin-right: 5px;  
+      }
     }
     color: #FFF !important;
     :hover {
       color: #964CDB !important;
+    }
+    @media(max-width: 1024px) {
+      font-size: 16px; 
     }
   }
 `;
@@ -48,10 +54,14 @@ export const NormalNav = styled.nav`
 
   .navbar-brand {
       margin-right: 100px;
+      
     img {
       width: 100%;
       height: 100%;
       max-width: 150px;
+    }
+    @media(max-width: 1024px) {
+      margin-right: 0;
     }
   }
   .container {
@@ -66,10 +76,16 @@ export const NormalNav = styled.nav`
     line-height: 29px;
     :not(:last-child) {
       margin-right: 50px;
+      @media(max-width: 1024px) {
+        margin-right: 5px;  
+      }
     }
     color: #FFF !important;
     :hover {
       color: #964CDB !important;
+    }
+    @media(max-width: 1024px) {
+      font-size: 16px; 
     }
   }
 `;
@@ -93,4 +109,8 @@ export const OpenYourAccountButton = styled.button`
     text-decoration: none;
     color: white;
   }
+  @media(max-width: 1024px) {
+      width: 191px;
+      height: 50px;
+    }
 `;
