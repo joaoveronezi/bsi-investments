@@ -61,11 +61,10 @@ export const SocialIconsWrapper = styled.div`
   img {
     width: 100%;
     max-width: 60px;
-    :not(:last-child) {
-      margin-right: 30px;
-    }
   }
-
+  a:not(:last-child) {
+      margin-right: 30px;
+  }
 `;
 
 export const DisclaimerWrapper = styled.div`

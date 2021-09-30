@@ -25,9 +25,27 @@ const Footer = () => {
         </IconWrapper>
         <SocialMediaWrapper>
           <SocialIconsWrapper>
-            <img src={socialIcon} alt="Icon" />
-            <img src={socialIcon} alt="Icon" />
-            <img src={socialIcon} alt="Icon" />
+            <a
+              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={socialIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={socialIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={socialIcon} alt="Icon" />
+            </a>
           </SocialIconsWrapper>
           <p>
             Av. Barão Homen de Melo, 4500, Cj. 510

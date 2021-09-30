@@ -1,21 +1,26 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import EclipseTeste from "assets/images/eclipse.png";
-import { CardWrapper, TextWrapper } from "./Card.styles";
+import socialIcon from "assets/images/linkedin-icon.png";
+import mailIcon from "assets/images/mail-icon.png";
+import { CardWrapper, TextWrapper, SocialIconsWrapper } from "./Card.styles";
 
 const Card = ({
-  name, title, link1, link2
+  name, title, link1, profilePic
 }) => (
   <CardWrapper>
-    <img src={EclipseTeste} alt="teste" />
-
+    <img src={profilePic} alt="teste" />
     <TextWrapper>
       <h2>{name}</h2>
       <h2>{title}</h2>
     </TextWrapper>
-
-    <p>{link1}</p>
-    <p>{link2}</p>
+    <SocialIconsWrapper>
+      <a href={link1} target="_blank" rel="noreferrer">
+        <img src={socialIcon} alt="Icon" />
+      </a>
+      <a href="mailto:contato@bsinvest.com.br" target="_blank" rel="noreferrer">
+        <img src={mailIcon} alt="Icon" />
+      </a>
+    </SocialIconsWrapper>
   </CardWrapper>
 );
 

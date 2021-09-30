@@ -58,6 +58,10 @@ export const AccountButton = styled.button`
     text-decoration: none;
     color: white;
   }
+  @media(max-width: 1024px) {
+    max-width: 330px;
+    height: 70px;
+  }
 `;
 
 export const MouseScrollWrapper = styled.a`
