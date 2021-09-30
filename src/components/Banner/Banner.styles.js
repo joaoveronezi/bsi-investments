@@ -45,8 +45,7 @@ export const BannerButton = styled.button`
   font-family: 'Inter', sans-serif;
   transition: 0.3s;
   :hover {
-    background-color: #964CDB;
+    background-color: white;
+    color: #6C3EA4;
   }
-
-
 `;

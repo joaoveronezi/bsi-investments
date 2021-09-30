@@ -9,6 +9,33 @@ export const HiddenNavbar = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+
+  .navbar-brand {
+    margin-right: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 150px;
+    }
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    :not(:last-child) {
+      margin-right: 50px;
+    }
+    color: #FFF !important;
+    :hover {
+      color: #964CDB !important;
+    }
+  }
 `;
 
 export const NormalNav = styled.nav`
@@ -18,4 +45,52 @@ export const NormalNav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+
+  .navbar-brand {
+      margin-right: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 150px;
+    }
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    :not(:last-child) {
+      margin-right: 50px;
+    }
+    color: #FFF !important;
+    :hover {
+      color: #964CDB !important;
+    }
+  }
+`;
+
+export const OpenYourAccountButton = styled.button`
+  width: 248px;
+  height: 55px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #964CDB;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s;
+  :hover {
+    background-color: #964CDB;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;

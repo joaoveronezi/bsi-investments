@@ -2,8 +2,6 @@ import React from "react";
 import { Accordion as AccordionComponent } from "react-bootstrap";
 import { AccordionWrapper, AccordionHeader } from "./Accordion.styles";
 
-// rever o comportamento dos headers do accordion pq talvez
-// compense mais fazer o custimezed pelo styled component
 const Accordion = () => (
   <AccordionWrapper>
     <AccordionComponent>

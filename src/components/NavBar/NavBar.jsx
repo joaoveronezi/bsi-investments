@@ -2,8 +2,8 @@ import React, { useState, useCallback, useEffect } from "react";
 import {
   Container, Nav, Navbar
 } from "react-bootstrap";
-import Icon from "assets/icons/icon.jpeg";
-import { HiddenNavbar, NormalNav } from "./NavBar.styles";
+import Icon from "assets/icons/bsi-icon.svg";
+import { HiddenNavbar, NormalNav, OpenYourAccountButton } from "./NavBar.styles";
 
 const NavBar = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -41,8 +41,12 @@ const NavBar = () => {
             <Nav.Link href="#contact">CONTATO</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link eventKey={2} href="#memes">
-              ABRA SUA CONTA
+            <Nav.Link eventKey={2} href="#link">
+              <a href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
+                <OpenYourAccountButton>
+                  ABRA SUA CONTA
+                </OpenYourAccountButton>
+              </a>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

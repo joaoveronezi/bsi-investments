@@ -5,7 +5,7 @@ import {
 } from "./Home.styles";
 
 const MOCK_TITLE = [
-  "Invista com quem proporciona a <span>melhor</span> experiência em assessoria de investimento.",
+  "A <span>melhor</span> experiência em assessoria de investimentos.",
   "Assessoria que proprociona a você <span>soluções</span> em investimentos.",
   "Assessoria personalizada que <span>inspira</span> pessoas e empresas."
 ];
@@ -23,7 +23,11 @@ const Home = () => {
     <HomeContainer style={{ backgroundImage: "url(resources/images/homeImage.png)" }} id="home">
       <TextWrapper>
         <HomeTitle dangerouslySetInnerHTML={{ __html: MOCK_TITLE[indexTitle] }} />
-        <AccountButton type="button">ABRE SUA CONTA</AccountButton>
+        <a href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
+          <AccountButton type="button">
+            ABRA SUA CONTA
+          </AccountButton>
+        </a>
       </TextWrapper>
       <MouseScrollWrapper href="#about">
         <img src={mouseLogo} alt="Mouse Scroll" />

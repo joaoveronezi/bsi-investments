@@ -8,11 +8,13 @@ export const WhoAreUsWrapper = styled.div`
   width: 100%;
   height: 100vh;
   flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 `;
 
 export const TitleWrapper = styled.div`
   h1 {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -21,6 +23,13 @@ export const TitleWrapper = styled.div`
     color: white;
   }
   margin-bottom: 100px;
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
 `;
 
 export const CardsContainer = styled.div` 

@@ -17,6 +17,8 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 `;
 
 export const Aside = styled.div`

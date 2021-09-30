@@ -11,6 +11,8 @@ export const HomeContainer = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 `;
 
 export const TextWrapper = styled.div`
@@ -31,7 +33,7 @@ export const HomeTitle = styled.h2`
   span {
     color: #6C3EA4;
   }
-  
+
 `;
 
 export const AccountButton = styled.button`
@@ -50,6 +52,10 @@ export const AccountButton = styled.button`
   transition: 0.3s;
   :hover {
     background-color: #964CDB;
+  }
+  a {
+    text-decoration: none;
+    color: white;
   }
 `;
 
