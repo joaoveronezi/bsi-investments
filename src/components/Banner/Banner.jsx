@@ -13,7 +13,9 @@ const Banner = () => (
         Atuamos com portifólio de investimentos completo para suporte à sua empresa.
       </p>
     </BannerDisclaimer>
-    <BannerButton type="button">ENTRE EM CONTATO!</BannerButton>
+    <a href="mailto:contato@bsinvest.com.br" target="_blank" rel="noreferrer">
+      <BannerButton type="button">ENTRE EM CONTATO!</BannerButton>
+    </a>
   </BannerWrapper>
 );
 

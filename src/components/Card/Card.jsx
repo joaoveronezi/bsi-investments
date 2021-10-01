@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import socialIcon from "assets/images/linkedin-icon.png";
-import mailIcon from "assets/images/mail-icon.png";
+import socialIcon from "assets/images/linkedin-icon.svg";
+import mailIcon from "assets/images/mail-icon.svg";
 import { CardWrapper, TextWrapper, SocialIconsWrapper } from "./Card.styles";
 
 const Card = ({

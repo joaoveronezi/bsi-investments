@@ -1,7 +1,10 @@
 /* eslint-disable arrow-body-style */
 import React from "react";
 import icon from "assets/icons/bsi-icon.svg";
-import socialIcon from "assets/images/ellipse2.png";
+import linkedinIcon from "assets/images/linkedin-icon.svg";
+import whatsAppIcon from "assets/images/whats-icon.svg";
+import instaIcon from "assets/images/insta-icon.svg";
+
 import {
   DisclaimerTextWrapper,
   DisclaimerWrapper,
@@ -26,25 +29,25 @@ const Footer = () => {
         <SocialMediaWrapper>
           <SocialIconsWrapper>
             <a
-              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              href="https://wa.me/message/2YKH5MABSOVOM1"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={socialIcon} alt="Icon" />
+              <img src={whatsAppIcon} alt="Icon" />
             </a>
             <a
-              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              href="https://www.instagram.com/blacksheepinvestimentos/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={socialIcon} alt="Icon" />
+              <img src={instaIcon} alt="Icon" />
             </a>
             <a
-              href="https://www.linkedin.com/in/black-sheep-investimentos-085425221/"
+              href="https://www.linkedin.com/company/blacksheep-investimentos/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={socialIcon} alt="Icon" />
+              <img src={linkedinIcon} alt="Icon" />
             </a>
           </SocialIconsWrapper>
           <p>

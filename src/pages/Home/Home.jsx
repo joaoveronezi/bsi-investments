@@ -23,7 +23,7 @@ const Home = () => {
     <HomeContainer style={{ backgroundImage: "url(resources/images/homeImage.png)" }} id="home">
       <TextWrapper>
         <HomeTitle dangerouslySetInnerHTML={{ __html: MOCK_TITLE[indexTitle] }} />
-        <a href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
+        <a href="#contact">
           <AccountButton type="button">
             ABRA SUA CONTA
           </AccountButton>

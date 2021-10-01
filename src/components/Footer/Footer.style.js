@@ -58,6 +58,8 @@ export const SocialMediaWrapper = styled.div`
 `;
 
 export const SocialIconsWrapper = styled.div`
+  width: 100%;
+  max-width: 240px;
   img {
     width: 100%;
     max-width: 60px;

@@ -13,7 +13,7 @@ const Forms = () => {
 
   const sendEmail = (e) => { // colocar com a conta da BSI
     e.preventDefault();
-    emailjs.sendForm("gmail", "template_wyihy2x", e.target, "user_qoRyU4scf3XSErG3biuuL")
+    emailjs.sendForm("service_4i6c67r", "template_a6xunm7", e.target, "user_i0jHuQ72hDRMDGmvi9cok")
       .then((result) => {
         alert("Email enviado com sucesso!", result);
       }, (error) => {
