@@ -18,7 +18,7 @@ export const BannerTitle = styled.h2`
   font-size: 64px;
   line-height: 77px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 `;
 
 export const BannerDisclaimer = styled.div`
@@ -41,7 +41,7 @@ export const BannerButton = styled.button`
   display: inline-block;
   font-size: 30px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-family: 'Inter', sans-serif;
   transition: 0.3s;
   :hover {
