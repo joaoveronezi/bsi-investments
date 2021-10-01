@@ -13,7 +13,7 @@ export const FooterWrapper = styled.div`
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  @media(max-width: 1024px) {
+  @media(max-width: 1440px) {
     padding: 50px;
   }
 `;

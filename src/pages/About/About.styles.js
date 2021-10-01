@@ -8,13 +8,13 @@ export const AboutContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh + 80px);
 `;
 
 export const Main = styled.div`
   width: 60%;
   height: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh + 80px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,7 +31,7 @@ export const Aside = styled.div`
   img {
     width: 100%;
     max-width: 800px;
-    height: 100vh;
+    height: calc(100vh + 80px);
     object-fit: cover;
   }
 `;
@@ -41,10 +41,10 @@ export const TextWrapper = styled.div`
   max-width: 800px;
   height: 570px;
   color: white;
-  margin: 130px auto;
+  margin: 100px auto;
 
   @media(max-width: 1024px) {
-    margin: 30px auto;
+    margin: 77px auto;
     padding: 0 30px;
     h3 {
       font-size: 40px;
@@ -62,7 +62,10 @@ export const AboutTitle = styled.h3`
   font-size: 60px;
   line-height: 77px;
   text-align: left;
-  margin-bottom: 53px;
+  margin-bottom: 20px;
+  @media(max-width: 1440px) {
+    font-size: 45px;
+  }
 `;
 export const AboutText = styled.p`
   font-family: 'Inter', sans-serif;
@@ -70,6 +73,13 @@ export const AboutText = styled.p`
   font-weight: 300;
   font-size: 20px;
   line-height: 29px;
+  span {
+    font-style: bold;
+    font-weight: bold;
+  }
+  @media(max-width: 1440px) {
+    font-size: 18px;
+  }
 `;
 
 export const AccordionContainer = styled.div`

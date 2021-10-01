@@ -24,6 +24,11 @@ export const AccordionWrapper = styled.div`
     h2 {
       margin-left: 130px;
     }
+    @media(max-width: 1440px) {
+      h2 {
+        margin-left: 10px;
+      }
+    }
   }
   .accordion-button::after {
     background-image: url("resources/images/arrow.png");

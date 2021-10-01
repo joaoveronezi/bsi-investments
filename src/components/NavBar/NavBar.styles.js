@@ -31,7 +31,7 @@ export const HiddenNavbar = styled.nav`
     :not(:last-child) {
       margin-right: 50px;
       @media(max-width: 1024px) {
-        margin-right: 5px;  
+        margin-right: 14px;  
       }
     }
     color: #FFF !important;
@@ -77,7 +77,7 @@ export const NormalNav = styled.nav`
     :not(:last-child) {
       margin-right: 50px;
       @media(max-width: 1024px) {
-        margin-right: 5px;  
+        margin-right: 14px;  
       }
     }
     color: #FFF !important;

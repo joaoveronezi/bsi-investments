@@ -57,6 +57,9 @@ export const Title = styled.h2`
   line-height: 77px;
   text-align: center;
   color: #FFFFFF;
+  @media(max-width: 1024px) {
+    font-size: 40px;
+  }
 `;
 
 export const SubTitle = styled.p`

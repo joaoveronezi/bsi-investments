@@ -25,6 +25,8 @@ export const WhoAreUsWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
+  margin-bottom: 100px;
+  margin-top: 100px;
   h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -34,7 +36,6 @@ export const TitleWrapper = styled.div`
     text-align: center;
     color: white;
   }
-  margin-bottom: 100px;
   p {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
@@ -49,5 +50,4 @@ export const CardsContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 70px;
-  
 `;
