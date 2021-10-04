@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const AccordionWrapper = styled.div`
   width: 100%;
@@ -24,9 +25,15 @@ export const AccordionWrapper = styled.div`
     h2 {
       margin-left: 130px;
     }
-    @media(max-width: 1440px) {
+  
+    @media(max-width: ${sizes.xxlg}) {
       h2 {
-        margin-left: 10px;
+        margin-left: 33px;
+      }
+    }
+    @media(max-width: ${sizes.xlg}) {
+      h2 {
+        margin-left: 17px;
       }
     }
   }
@@ -46,11 +53,14 @@ export const AccordionWrapper = styled.div`
 `;
 
 export const AccordionHeader = styled.h2`
- font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
     color: #FFFF;
 
+    @media(max-width: ${sizes.xlg}) {
+      font-size: 26px;
+    }
 `;

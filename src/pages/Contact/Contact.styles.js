@@ -1,20 +1,29 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const ContatoWrapper = styled.div`
   background-color: #202020;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: calc(100vh + 80px);
   position: relative;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  @media(max-width: ${sizes.md}) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
   width: 50%;
+  @media(max-width: ${sizes.md}) {
+    display: none;
+  }
 `;
 
 export const IconImage = styled.img`
@@ -37,7 +46,8 @@ export const IconImage = styled.img`
 export const ContactImage = styled.img`
   width: 100%;
   max-width: 900px;
-  height: 100vh;
+  height: 100%;
+  min-height: calc(100vh + 80px);
   object-fit: cover;
 `;
 
@@ -57,7 +67,7 @@ export const Title = styled.h2`
   line-height: 77px;
   text-align: center;
   color: #FFFFFF;
-  @media(max-width: 1024px) {
+  @media(max-width: ${sizes.xlg}) {
     font-size: 40px;
   }
 `;
@@ -70,6 +80,9 @@ export const SubTitle = styled.p`
   line-height: 29px;
   color: #FFFFFF;
   margin-top: 75px;
+  @media(max-width: ${sizes.xlg}) {
+    margin-top: 20px;
+  }
 `;
 
 export const Tooltip = styled.p`

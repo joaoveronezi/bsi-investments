@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const WhoAreUsWrapper = styled.div`
   background-color: #161619;
@@ -6,7 +7,8 @@ export const WhoAreUsWrapper = styled.div`
   align-items: space-between;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -22,11 +24,12 @@ export const WhoAreUsWrapper = styled.div`
       font-size: 20px;
     }
   }
+
 `;
 
 export const TitleWrapper = styled.div`
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -43,6 +46,12 @@ export const TitleWrapper = styled.div`
     line-height: 29px;
     text-align: center;
   }
+  @media(max-width: ${sizes.lg}) {
+    margin-top: 0px;
+  }
+  @media(max-width: ${sizes.md}) {
+    margin-top: 120px;
+  }
 `;
 
 export const CardsContainer = styled.div` 
@@ -50,4 +59,13 @@ export const CardsContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 70px;
+  margin-bottom: 50px;
+  padding: 0 35px;
+ 
+  @media(max-width: ${sizes.xxlg}) {
+    padding: 0 50px;
+  }
+  @media(max-width: ${sizes.md}) {
+    flex-direction: column;
+  }
 `;

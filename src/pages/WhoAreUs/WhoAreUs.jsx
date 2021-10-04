@@ -10,7 +10,7 @@ import {
 
 const WhoAreUs = () => (
   <WhoAreUsWrapper>
-    <TitleWrapper style={{ marginBottom: window.innerWidth <= 1024 ? "100px" : "100px", marginTop: window.innerWidth <= 1024 ? "0" : "100px", }}>
+    <TitleWrapper>
       <h1>NOSSO TIME</h1>
     </TitleWrapper>
     <CardsContainer>

@@ -43,7 +43,6 @@ const About = () => (
       </AccordionContainer>
     </Main>
     <Aside>
-
       <img src={aboutImage} alt="Homem ao celular" />
     </Aside>
   </AboutContainer>

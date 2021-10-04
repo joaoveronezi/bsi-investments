@@ -1,4 +1,7 @@
+/* eslint-disable import/named */
+/* eslint-disable no-unused-vars */
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const HiddenNavbar = styled.nav`
   z-index: 3 !important;
@@ -9,13 +12,23 @@ export const HiddenNavbar = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-
   .navbar-brand {
-    margin-right: 100px;
     img {
       width: 100%;
       height: 100%;
       max-width: 150px;
+    }
+    @media(max-width: ${sizes.xlg}) {
+      img {
+        margin-left: 50px;
+      }
+    }
+    @media(max-width: ${sizes.lg}) {
+      margin-right: 0;
+      img {
+        max-width: 100px;
+        margin-left: 10px;
+      }
     }
   }
   .container {
@@ -30,15 +43,15 @@ export const HiddenNavbar = styled.nav`
     line-height: 29px;
     :not(:last-child) {
       margin-right: 50px;
-      @media(max-width: 1024px) {
-        margin-right: 14px;  
+      @media(max-width: ${sizes.lg}) {
+        margin-right: 24px;  
       }
     }
     color: #FFF !important;
     :hover {
       color: #964CDB !important;
     }
-    @media(max-width: 1024px) {
+    @media(max-width: ${sizes.xlg}) {
       font-size: 16px; 
     }
   }
@@ -53,15 +66,24 @@ export const NormalNav = styled.nav`
   width: 100%;
 
   .navbar-brand {
-      margin-right: 100px;
+    margin-right: 150px;
       
     img {
       width: 100%;
       height: 100%;
       max-width: 150px;
     }
-    @media(max-width: 1024px) {
+    @media(max-width: ${sizes.xlg}) {
+      img {
+        margin-left: 50px;
+      }
+    }
+    @media(max-width: ${sizes.lg}) {
       margin-right: 0;
+      img {
+        max-width: 100px;
+        margin-left: 10px;
+      }
     }
   }
   .container {
@@ -76,15 +98,15 @@ export const NormalNav = styled.nav`
     line-height: 29px;
     :not(:last-child) {
       margin-right: 50px;
-      @media(max-width: 1024px) {
-        margin-right: 14px;  
+      @media(max-width: ${sizes.lg}) {
+        margin-right: 24px;
       }
     }
     color: #FFF !important;
     :hover {
       color: #964CDB !important;
     }
-    @media(max-width: 1024px) {
+    @media(max-width: ${sizes.xlg}) {
       font-size: 16px; 
     }
   }
@@ -109,8 +131,13 @@ export const OpenYourAccountButton = styled.button`
     text-decoration: none;
     color: white;
   }
-  @media(max-width: 1024px) {
-      width: 191px;
-      height: 50px;
-    }
+  @media(max-width: ${sizes.xlg}) {
+    width: 191px;
+    height: 50px;
+  }
+  @media(max-width: ${sizes.lg}) {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
 `;
