@@ -47,9 +47,6 @@ export const TitleWrapper = styled.div`
     text-align: center;
   }
   @media(max-width: ${sizes.lg}) {
-    margin-top: 0px;
-  }
-  @media(max-width: ${sizes.md}) {
     margin-top: 120px;
   }
 `;
@@ -65,7 +62,7 @@ export const CardsContainer = styled.div`
   @media(max-width: ${sizes.xxlg}) {
     padding: 0 50px;
   }
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     flex-direction: column;
   }
 `;

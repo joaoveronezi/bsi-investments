@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   width: 100%;
   height: 100%;
   min-height: calc(100vh + 80px);
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     flex-direction: column;
   }
 `;
@@ -26,7 +26,7 @@ export const Main = styled.div`
   justify-content: flex-start;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     width: 100%;
   }
 `;
@@ -36,13 +36,16 @@ export const Aside = styled.div`
   justify-content: flex-end;
   width: 40%;
   max-width: 800px;
+  height: 100%;
+  min-height: calc(100vh + 80px);
   img {
     width: 100%;
     max-width: 800px;
-    height: calc(100vh + 80px);
+    height: 100%;
+    min-height: calc(100vh + 80px);
     object-fit: cover;
   }
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     display: none;
   }
 `;
@@ -56,14 +59,8 @@ export const TextWrapper = styled.div`
   @media(max-width: ${sizes.xxlg}) {
     margin: 70px auto;
     padding: 0 30px;
-    h3 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 16px;
-    }
   }
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     max-width: 100%;
     margin-bottom: 300px;
   }
@@ -79,6 +76,10 @@ export const AboutTitle = styled.h3`
   margin-bottom: 20px;
   @media(max-width: ${sizes.xxlg}) {
     font-size: 45px;
+    margin-bottom: 0;
+  }
+  @media(max-width: ${sizes.xlg}) {
+    font-size: 36px;
   }
 `;
 export const AboutText = styled.p`
@@ -87,12 +88,19 @@ export const AboutText = styled.p`
   font-weight: 300;
   font-size: 20px;
   line-height: 29px;
-  span {
+  h5 {
     font-style: bold;
     font-weight: bold;
+    margin-top: 10px;
   }
   @media(max-width: ${sizes.xxlg}) {
     font-size: 18px;
+  }
+  @media(max-width: ${sizes.xlg}) {
+    font-size: 16px;
+    h5 {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -101,7 +109,7 @@ export const AccordionContainer = styled.div`
   max-width: 60%;
   position: absolute;
   bottom: 0;
-  @media(max-width: ${sizes.md}) {
+  @media(max-width: ${sizes.lg}) {
     max-width: 100%;
   }
 `;

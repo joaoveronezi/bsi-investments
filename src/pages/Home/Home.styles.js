@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -22,6 +23,9 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
+  @media(max-width: ${sizes.lg}) {
+    max-width: 1000px;
+  }
 `;
 
 export const HomeTitle = styled.h2`
@@ -34,7 +38,9 @@ export const HomeTitle = styled.h2`
   span {
     color: #6C3EA4;
   }
-
+  @media(max-width: ${sizes.lg}) {
+    font-size: 45px;
+  }
 `;
 
 export const AccountButton = styled.button`
@@ -59,7 +65,7 @@ export const AccountButton = styled.button`
     color: white;
   }
   @media(max-width: 1024px) {
-    max-width: 330px;
+    max-width: 300px;
     height: 70px;
   }
 `;

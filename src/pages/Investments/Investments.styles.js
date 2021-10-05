@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const InvestmentsWrapper = styled.div`
   background-color: #161619;
@@ -22,4 +23,7 @@ export const CardsWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  @media(max-width: ${sizes.lg}) {
+    flex-direction: column;
+  }
 `;

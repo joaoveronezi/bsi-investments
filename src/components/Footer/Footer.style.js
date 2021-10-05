@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const FooterWrapper = styled.div`
   background-color: #161619;
@@ -91,5 +93,10 @@ export const DisclaimerTextWrapper = styled.div`
     line-height: 29px;
     text-align: justify;
     text-justify: inter-word;
+  }
+  @media(max-width: ${sizes.lg}) {
+    p {
+      font-size: 12px;
+    }
   }
 `;
