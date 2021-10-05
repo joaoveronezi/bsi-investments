@@ -4,7 +4,7 @@ import styled from "styled-components";
 import sizes from "utils/breakpoints";
 
 export const HiddenNavbar = styled.nav`
-  z-index: 9999 !important;
+  z-index: 5 !important;
   background-color: transparent !important;
   overflow: hidden;
   background-attachment: fixed;
@@ -61,7 +61,7 @@ export const HiddenNavbar = styled.nav`
 `;
 
 export const NormalNav = styled.nav`
-  z-index: 9999 !important;
+  z-index: 5 !important;
   overflow: hidden;
   background-color: #000000 !important;
   position: fixed;

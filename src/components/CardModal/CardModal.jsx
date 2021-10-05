@@ -18,12 +18,12 @@ const CardModal = ({ info, title, imageSRC }) => {
         aria-labelledby="example-modal-sizes-title-sm"
 
       >
-        <Modal.Header closeButton style={{ backgroundColor: "#6C3EA4", fontSize: window.innerWidth < 768 ? "18px" : "24px", color: "white" }}>
+        <Modal.Header closeButton style={{ backgroundColor: "#6C3EA4", fontSize: window.innerWidth < 540 ? "18px" : "24px", color: "white" }}>
           <Modal.Title id="example-modal-sizes-title-sm">
             {title}
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{ backgroundColor: "#6C3EA4", fontSize: window.innerWidth < 768 ? "18px" : "24px", color: "white" }}>{info}</Modal.Body>
+        <Modal.Body style={{ backgroundColor: "#6C3EA4", fontSize: window.innerWidth < 540 ? "18px" : "24px", color: "white" }}>{info}</Modal.Body>
       </Modal>
 
     </>
