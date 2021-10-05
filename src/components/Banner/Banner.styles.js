@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const BannerWrapper = styled.div`
   background-color: #6C3EA4;
@@ -19,6 +20,9 @@ export const BannerTitle = styled.h2`
   line-height: 77px;
   text-align: center;
   margin-top: 100px;
+  @media(max-width: ${sizes.sm}) {
+    font-size: 36px;
+  }
 `;
 
 export const BannerDisclaimer = styled.div`
@@ -28,6 +32,11 @@ export const BannerDisclaimer = styled.div`
   line-height: 29px;
   text-align: center;
   width: 50%;
+  @media(max-width: ${sizes.sm}) {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 18px;
+  }
 `;
 
 export const BannerButton = styled.button`
@@ -47,5 +56,11 @@ export const BannerButton = styled.button`
   :hover {
     background-color: white;
     color: #6C3EA4;
+  }
+  @media(max-width: ${sizes.sm}) {
+    width: 230px;
+    height: 60px;
+    font-size: 15px;
+
   }
 `;

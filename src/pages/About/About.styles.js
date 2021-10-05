@@ -64,6 +64,9 @@ export const TextWrapper = styled.div`
     max-width: 100%;
     margin-bottom: 300px;
   }
+  @media(max-width: ${sizes.xs}) {
+    margin-bottom: 600px;
+  }
 `;
 
 export const AboutTitle = styled.h3`

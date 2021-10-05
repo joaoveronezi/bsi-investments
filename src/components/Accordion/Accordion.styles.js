@@ -8,6 +8,9 @@ export const AccordionWrapper = styled.div`
     color: white;
     font-size: 22px;
     background-color: black;
+    @media(max-width: ${sizes.sm}) {
+        font-size: 18px;
+    }
   }
   .accordion-button {
     background-color: #6C3EA4;
@@ -48,6 +51,9 @@ export const AccordionWrapper = styled.div`
       color: white;
       font-size: 22px;
       background-color: #6C3EA4;
+      @media(max-width: ${sizes.sm}) {
+        font-size: 18px;
+      }
     }
   }
 `;

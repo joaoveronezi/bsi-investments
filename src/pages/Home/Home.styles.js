@@ -12,8 +12,12 @@ export const HomeContainer = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  @media(max-width: ${sizes.sm}) {
+    width: 100vw; 
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -25,6 +29,9 @@ export const TextWrapper = styled.div`
   max-width: 1200px;
   @media(max-width: ${sizes.lg}) {
     max-width: 1000px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    padding: 0 15px;
   }
 `;
 
@@ -40,6 +47,9 @@ export const HomeTitle = styled.h2`
   }
   @media(max-width: ${sizes.lg}) {
     font-size: 45px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    font-size: 36px;
   }
 `;
 
@@ -68,13 +78,18 @@ export const AccountButton = styled.button`
     max-width: 300px;
     height: 70px;
   }
+  @media(max-width: ${sizes.sm}) {
+    margin-top: 53px;
+  }
 `;
 
 export const MouseScrollWrapper = styled.a`
   position: absolute;
   bottom: 35px;
-
-img {
-  width: 90px;
-}
+  img {
+    width: 90px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    bottom: 0;
+  }
 `;

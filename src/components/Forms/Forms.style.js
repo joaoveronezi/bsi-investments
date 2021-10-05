@@ -1,11 +1,11 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const FormsStyled = styled.form`
   width: 100%;
   max-width: 521px;
   color: white;
-
   .form-control {
     background-color: transparent;
     border-top: none;
@@ -21,6 +21,15 @@ export const ButtonWrapper = styled.div`
   margin: 75px auto 0 auto;
   width: 372px;
   height: 77px;
+
+  @media(max-width: ${sizes.sm}) {
+    width: 260px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 `;
 
 export const SubmitButton = styled.button`

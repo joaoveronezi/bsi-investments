@@ -49,6 +49,14 @@ export const TitleWrapper = styled.div`
   @media(max-width: ${sizes.lg}) {
     margin-top: 120px;
   }
+  @media(max-width: ${sizes.sm}) {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const CardsContainer = styled.div` 

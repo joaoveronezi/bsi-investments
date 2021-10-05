@@ -4,7 +4,7 @@ import styled from "styled-components";
 import sizes from "utils/breakpoints";
 
 export const HiddenNavbar = styled.nav`
-  z-index: 3 !important;
+  z-index: 9999 !important;
   background-color: transparent !important;
   overflow: hidden;
   background-attachment: fixed;
@@ -55,10 +55,13 @@ export const HiddenNavbar = styled.nav`
       font-size: 16px; 
     }
   }
+  @media(max-width: ${sizes.sm}) {
+    pointer-events: none;
+  }
 `;
 
 export const NormalNav = styled.nav`
-  z-index: 3 !important;
+  z-index: 9999 !important;
   overflow: hidden;
   background-color: #000000 !important;
   position: fixed;

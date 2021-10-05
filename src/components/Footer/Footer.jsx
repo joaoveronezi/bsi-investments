@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </SocialIconsWrapper>
           <p>
-            Av. Barão Homen de Melo, 4500, Cj. 510
+            Av. Barão Homem de Melo, 4500, Cj. 510
             <br />
             Belo Horizonte - Minas Gerais
             <br />

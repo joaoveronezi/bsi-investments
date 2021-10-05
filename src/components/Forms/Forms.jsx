@@ -5,13 +5,12 @@
 import React, { useState } from "react";
 import { FloatingLabel, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import InputMask from "react-input-mask";
 import { ButtonWrapper, FormsStyled, SubmitButton } from "./Forms.style";
 
 const Forms = () => {
   const [phone, setPhone] = useState("");
 
-  const sendEmail = (e) => { // colocar com a conta da BSI
+  const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm("service_4i6c67r", "template_a6xunm7", e.target, "user_i0jHuQ72hDRMDGmvi9cok")
       .then((result) => {

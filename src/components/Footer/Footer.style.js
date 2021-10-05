@@ -18,6 +18,9 @@ export const FooterWrapper = styled.div`
   @media(max-width: 1440px) {
     padding: 50px;
   }
+  @media(max-width: ${sizes.sm}) {
+    padding:20px;
+  }
 `;
 
 export const IconAndAdressWrapper = styled.div`
@@ -26,6 +29,10 @@ export const IconAndAdressWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   margin-bottom: 30px;
+  @media(max-width: ${sizes.sm}) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -44,6 +51,15 @@ export const IconWrapper = styled.div`
     margin-top: 25px;
     max-width: 500px;
   }
+  @media(max-width: ${sizes.sm}) {
+    align-items:  center;
+    justify-content: center;
+    margin-bottom: 30px;
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  }
 `;
 
 export const SocialMediaWrapper = styled.div`
@@ -56,6 +72,15 @@ export const SocialMediaWrapper = styled.div`
   p {
     text-align: end;
     margin-top: 25px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    align-items:  center;
+    justify-content: center;
+    margin-top: 20px;
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
   }
 `;
 
@@ -79,6 +104,11 @@ export const DisclaimerWrapper = styled.div`
   p {
     margin-bottom: 45px;
     font-size: 18px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    p {
+      text-align: center;
+    }
   }
 `;
 

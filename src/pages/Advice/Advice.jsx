@@ -1,8 +1,9 @@
 /* eslint-disable import/named */
-import { TitleWrapper } from "pages/WhoAreUs/WhoAreUs.styles";
 import React from "react";
 import dividerIcon from "assets/icons/divider.svg";
-import { AdviceWrapper, CardText, CardsWrapper } from "./Advice.styles";
+import {
+  AdviceWrapper, CardText, CardsWrapper, TitleWrapper
+} from "./Advice.styles";
 
 const Advice = () => (
   <AdviceWrapper id="advice" style={{ backgroundImage: "url(resources/images/assesoria.jpg)" }}>

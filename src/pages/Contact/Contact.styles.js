@@ -70,6 +70,9 @@ export const Title = styled.h2`
   @media(max-width: ${sizes.xlg}) {
     font-size: 40px;
   }
+  @media(max-width: ${sizes.sm}) {
+    font-size: 36px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -93,5 +96,16 @@ export const Tooltip = styled.p`
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+
+  @media(max-width: ${sizes.sm}) {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+`;
+
+export const FormsWrapper = styled.div`
+  width: 100%;
+  padding: 0 15px;
 `;
