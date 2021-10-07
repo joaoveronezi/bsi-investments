@@ -27,10 +27,11 @@ const About = () => (
           estudos mais profundos sobre estratégias de investimento, para estabelecer objetivos
           e torná-los realidade através do mercado financeiro.
           <br />
-          <br />
-          "Uma vida de sucesso envolve a combinação: sonhos + realidade + determinação."
-          <br />
-          - Ray Dalio
+          <p>
+            "Uma vida de sucesso envolve a combinação: sonhos + realidade + determinação."
+            <br />
+            - Ray Dalio
+          </p>
         </AboutText>
 
       </TextWrapper>

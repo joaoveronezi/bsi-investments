@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-alert */
 /* eslint-disable no-unused-vars */
 /* eslint-disable arrow-body-style */
@@ -9,15 +10,27 @@ import { ButtonWrapper, FormsStyled, SubmitButton } from "./Forms.style";
 
 const Forms = () => {
   const [phone, setPhone] = useState("");
+  const [validated, setValidated] = useState(false);
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    setValidated(true);
     e.preventDefault();
-    emailjs.sendForm("service_4i6c67r", "template_a6xunm7", e.target, "user_i0jHuQ72hDRMDGmvi9cok")
-      .then((result) => {
-        alert("Email enviado com sucesso!", result);
-      }, (error) => {
-        alert("Algum erro aconteceu, ao tentar enviar um email")
-      });
+
+    if (validated) {
+      emailjs.sendForm("service_4i6c67r", "template_a6xunm7", e.target, "user_i0jHuQ72hDRMDGmvi9cok")
+        .then((result) => {
+          alert("Email enviado com sucesso!", result);
+        }, (error) => {
+          alert("Algum erro aconteceu, ao tentar enviar um email")
+        });
+    }
+
     e.target.reset();
   }
 
@@ -30,16 +43,18 @@ const Forms = () => {
   };
 
   return (
-    <Form as={FormsStyled} onSubmit={sendEmail}>
+    <Form as={FormsStyled} noValidate validated={validated} onSubmit={handleSubmit}>
       <FloatingLabel
         controlId="name"
         label="Nome"
         className="mb-3"
       >
-        <Form.Control type="text" placeholder="Seu Nome" name="name" />
+        <Form.Control type="text" placeholder="Seu Nome" name="name" required />
+        <Form.Control.Feedback type="invalid">Campo Nome Obrigatório</Form.Control.Feedback>
       </FloatingLabel>
       <FloatingLabel controlId="email" label="Email" className="mb-3">
-        <Form.Control type="email" placeholder="name@example.com" name="email" />
+        <Form.Control type="email" placeholder="name@example.com" name="email" required />
+        <Form.Control.Feedback type="invalid">Campo Email Obrigatório</Form.Control.Feedback>
       </FloatingLabel>
       <FloatingLabel controlId="telefone" label="Telefone (DDD) + NUM" className="mb-3">
         <Form.Control
@@ -48,15 +63,19 @@ const Forms = () => {
           type="tel"
           placeholder="Telefone"
           name="cellphone"
+          required
         />
       </FloatingLabel>
+      <Form.Control.Feedback type="invalid">Campo Telefone Obrigatório</Form.Control.Feedback>
       <FloatingLabel controlId="message" label="Mensagem" className="mb-3">
         <Form.Control
           as="textarea"
           placeholder="Deixe sua mensagem"
           style={{ height: "100px" }}
           name="message"
+          required
         />
+        <Form.Control.Feedback type="invalid">Campo Mensagem Obrigatório</Form.Control.Feedback>
       </FloatingLabel>
       <ButtonWrapper>
         <SubmitButton type="submit">

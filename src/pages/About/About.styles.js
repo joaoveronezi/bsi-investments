@@ -57,7 +57,7 @@ export const TextWrapper = styled.div`
   color: white;
   margin: 100px auto;
   @media(max-width: ${sizes.xxlg}) {
-    margin: 70px auto;
+    margin: 100px auto;
     padding: 0 30px;
   }
   @media(max-width: ${sizes.lg}) {
@@ -91,15 +91,22 @@ export const AboutText = styled.p`
   font-weight: 300;
   font-size: 20px;
   line-height: 29px;
+  p:last-child {
+    margin-top: 12px;
+  }
   h5 {
     font-style: bold;
     font-weight: bold;
     margin-top: 10px;
   }
+
   @media(max-width: ${sizes.xxlg}) {
-    font-size: 18px;
+    font-size: 16px;
+    h5 {
+      font-size: 16px;
+    }
   }
-  @media(max-width: ${sizes.xlg}) {
+  @media(max-width: ${sizes.xxlg}) {
     font-size: 16px;
     h5 {
       font-size: 16px;
