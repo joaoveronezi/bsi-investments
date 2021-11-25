@@ -34,7 +34,7 @@ const Advice = () => (
         <p>Assessoria entre R$ 250 mil e R$ 500 mil em investimentos</p>
         <img src={dividerIcon} alt="divider" />
         <p>
-          Proximidade é a palvra-chave. Aqui você conta com um
+          Proximidade é a palavra-chave. Aqui você conta com um
           acompanhamento individual, além da carteira personalizada alinhada a seus objetivos.
         </p>
       </CardText>
