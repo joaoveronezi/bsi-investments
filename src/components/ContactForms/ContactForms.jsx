@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import { FloatingLabel, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import { ButtonWrapper, FormsStyled, SubmitButton } from "./Forms.style";
+import { ButtonWrapper, FormsStyled, SubmitButton } from "./ContactForms.style";
 
 const Forms = () => {
   const [phone, setPhone] = useState("");

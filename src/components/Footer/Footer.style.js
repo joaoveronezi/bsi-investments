@@ -86,10 +86,10 @@ export const SocialMediaWrapper = styled.div`
 
 export const SocialIconsWrapper = styled.div`
   width: 100%;
-  max-width: 240px;
+  max-width: 290px;
   img {
     width: 100%;
-    max-width: 60px;
+    max-width: 50px;
   }
   a:not(:last-child) {
       margin-right: 30px;

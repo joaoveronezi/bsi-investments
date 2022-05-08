@@ -4,7 +4,9 @@ import icon from "assets/icons/bsi-icon.svg";
 import linkedinIcon from "assets/images/linkedin-icon.svg";
 import whatsAppIcon from "assets/images/whats-icon.svg";
 import instaIcon from "assets/images/insta-icon.svg";
+import youtubeIcon from "assets/images/youtube-icon.svg";
 
+// PEDIR LINK DO YOUTUBE DA GALERA DA BSI
 import {
   DisclaimerTextWrapper,
   DisclaimerWrapper,
@@ -48,6 +50,13 @@ const Footer = () => {
               rel="noreferrer"
             >
               <img src={linkedinIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/blacksheep-investimentos/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={youtubeIcon} alt="Icon" />
             </a>
           </SocialIconsWrapper>
           <p>

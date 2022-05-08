@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import sizes from "utils/breakpoints";
 
-export const ContatoWrapper = styled.div`
+export const ContactWrapper = styled.div`
   background-color: #202020;
   display: flex;
   align-items: center;
@@ -55,7 +55,8 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 100%;
+  padding: 60px 30px 0 30px;
   margin: 0 auto;
 `;
 
@@ -67,6 +68,7 @@ export const Title = styled.h2`
   line-height: 77px;
   text-align: center;
   color: #FFFFFF;
+  
   @media(max-width: ${sizes.xlg}) {
     font-size: 40px;
   }
@@ -108,4 +110,12 @@ export const Tooltip = styled.p`
 export const FormsWrapper = styled.div`
   width: 100%;
   padding: 0 15px;
+`;
+
+export const TypographWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 17px;
 `;

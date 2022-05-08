@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import CardModal from "components/CardModal";
-import { TitleWrapper } from "pages/WhoAreUs/WhoAreUs.styles";
+import { TitleWrapper } from "modules/v1/pages/WhoAreUs/WhoAreUs.styles";
 import React from "react";
 import { InvestmentsWrapper, CardsWrapper } from "./Investments.styles";
 

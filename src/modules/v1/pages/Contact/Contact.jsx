@@ -1,10 +1,10 @@
 import React from "react";
 import iconSRC from "assets/icons/bsi-icon.svg";
 import contactImage from "assets/images/contact.png";
-import Forms from "components/Forms";
+import Forms from "components/ContactForms";
 import Footer from "components/Footer";
 import {
-  ContatoWrapper, ImageWrapper, IconImage,
+  ContactWrapper, ImageWrapper, IconImage,
   ContactImage, TextWrapper, Title, SubTitle, Tooltip, FormsWrapper
 } from "./Contact.styles";
 
@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <>
-      <ContatoWrapper id="contact">
+      <ContactWrapper id="contact">
         <ImageWrapper>
           <IconImage src={iconSRC} alt="icon" />
           <ContactImage src={contactImage} alt="contactImage" />
@@ -36,7 +36,7 @@ const Contact = () => {
           </Tooltip>
           <FormsComponent />
         </TextWrapper>
-      </ContatoWrapper>
+      </ContactWrapper>
       <Footer />
     </>
   );
