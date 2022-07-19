@@ -86,7 +86,7 @@ export const SimulationTextWrapper = styled.div`
   }
 `;
 
-export const Teste = styled(Modal)`
+export const InsideModal = styled(Modal)`
   .modal-content {
     /* Modal Content */
     background-color: #161619;
@@ -124,6 +124,7 @@ export const ModalButton = styled.button`
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   transition: 0.3s;
+  margin: 15px;
   :hover {
     background-color: #964CDB;
   }

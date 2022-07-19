@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-properties */
 /* eslint-disable padded-blocks */
 /* eslint-disable max-len */
 import React, { useState } from "react";
@@ -12,16 +13,16 @@ import {
   SimulationWrapper,
   SimulationResults,
   SimulationTextWrapper,
-  Teste,
+  InsideModal,
   ModalButton,
 } from "./SimulationForms.styles";
 
 const SimulationForms = () => {
   const [formState, setFormsState] = useState({
-    monthNumber: 0,
-    cashPerMonth: 0,
-    anualProfitability: 0,
-    valueApplication: 0,
+    numberOfMonths: 0,
+    monthlyInvestment: 0,
+    annualProfitability: 0,
+    initialInvestment: 0,
   });
   const [simulationValues, setSimulationValues] = useState({
     monthlyProfitability: "",
@@ -35,11 +36,23 @@ const SimulationForms = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const {
+      numberOfMonths,
+      monthlyInvestment,
+      annualProfitability,
+      initialInvestment,
+    } = formState;
+
+    const monthlyProfit = (Math.pow((1 + (annualProfitability / 100)), (1 / numberOfMonths)) - 1) * 100;
+    const monthlyProfitInPercent = parseFloat((monthlyProfit / 100).toFixed(3));
+
+    const futureValue = (monthlyInvestment * Math.pow((1 + monthlyProfitInPercent), numberOfMonths)) + initialInvestment;
+
     setSimulationValues({
-      monthlyProfitability: "1,440",
-      aproximatedReturn: "800",
+      monthlyProfitability: `${monthlyProfit.toFixed(3)}%`,
+      aproximatedReturn: `R$${futureValue.toFixed(2)}`,
     });
-    // Calcular aqui o state da simulação
   };
 
   return (
@@ -53,9 +66,9 @@ const SimulationForms = () => {
           <Form.Control
             type="number"
             placeholder="meses"
-            name="monthNumber"
+            name="numberOfMonths"
             required
-            onChange={(e) => setFormsState({ ...formState, monthNumber: e.target.value })}
+            onChange={(e) => setFormsState({ ...formState, numberOfMonths: +e.target.value })}
           />
           {/* <Form.Control.Feedback type="invalid">Campo Nome Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
@@ -64,9 +77,9 @@ const SimulationForms = () => {
           <Form.Control
             type="number"
             placeholder="Somente numeros"
-            name="cashPerMonth"
+            name="monthlyInvestment"
             required
-            onChange={(e) => setFormsState({ ...formState, cashPerMonth: e.target.value })}
+            onChange={(e) => setFormsState({ ...formState, monthlyInvestment: +e.target.value })}
           />
           {/* <Form.Control.Feedback type="invalid">Campo Email Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
@@ -74,19 +87,19 @@ const SimulationForms = () => {
           <Form.Control
             type="number"
             placeholder="rentabilidadeAnual"
-            name="anualProfitability"
+            name="annualProfitability"
             required
-            onChange={(e) => setFormsState({ ...formState, anualProfitability: e.target.value })}
+            onChange={(e) => setFormsState({ ...formState, annualProfitability: +e.target.value })}
           />
         </FloatingLabel>
         {/* <Form.Control.Feedback type="invalid">Campo Telefone Obrigatório</Form.Control.Feedback> */}
-        <FloatingLabel controlId="valueApplication" label="Você já possui um valor para aplicar?" className="mb-3">
+        <FloatingLabel controlId="initialInvestment" label="Você já possui um valor para aplicar?" className="mb-3">
           <Form.Control
             type="number"
             placeholder="Valor"
-            name="valueApplication"
+            name="initialInvestment"
             required
-            onChange={(e) => setFormsState({ ...formState, valueApplication: e.target.value })}
+            onChange={(e) => setFormsState({ ...formState, initialInvestment: +e.target.value })}
           />
           {/* <Form.Control.Feedback type="invalid">Campo Mensagem Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
@@ -118,18 +131,19 @@ const SimulationForms = () => {
         </ButtonWrapper>
       </SimulationWrapper>
 
-      <Teste show={show} onHide={handleClose}>
+      <InsideModal show={show} onHide={handleClose}>
         <Modal.Header>
           <img src={iconSrc} alt="BSI icon" />
         </Modal.Header>
         <Modal.Body>
           <h2>FINANÇAS PESSOAIS</h2>
           <p>Tenha acesso a uma planilha exclusiva para controlar suas finanças junto com um conteúdo exclusivo da BSI para você!</p>
-          <ModalButton>Acesso ao conteúdo</ModalButton>
-          <ModalButton>Baixe agora a planilha</ModalButton>
-
+          <div>
+            <ModalButton>Acesso ao conteúdo</ModalButton>
+            <ModalButton>Baixe agora a planilha</ModalButton>
+          </div>
         </Modal.Body>
-      </Teste>
+      </InsideModal>
     </>
   );
 };
