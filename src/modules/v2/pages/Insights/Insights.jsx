@@ -18,59 +18,56 @@ import {
   topFii
 } from "../../../../assets/icons/v2";
 
-// RESOLVER TRETA DA NAVBAR
-// COLOCAR UMA NAVBAR DIFERENTE EM CADA VERSÃO DA APLICAÇÃO
-
 const cardsData = [
   {
     icon: financasPessoais,
     text: "Finanças Pessoais",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/aprenda-a-investir/financas-pessoais/"
   },
   {
     icon: rendaFixa,
     text: "Renda Fixa",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/renda-fixa/carteiras/"
   },
   {
     icon: fundosImobiliarios,
     text: "Fundos Imobiliários",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/fundos-imobiliarios/carteiras/"
   },
   {
     icon: acoesIC,
     text: "Ações",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/guia-de-investimentos/carteiras/"
   },
   {
     icon: internacional,
     text: "Internacional",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/internacional/carteiras/"
   },
   {
     icon: fundosRecomendados,
     text: "Fundos Recomendados",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/fundos-de-investimento/recomendacoes/"
   },
   {
     icon: familia,
     text: "Família DNA",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/guia-de-investimentos/relatorios/fundos-dna/"
   },
   {
     icon: familiaTrend,
     text: "Família Trend",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/fundos-de-investimento/relatorios/fundos-trend-e-books/"
   },
   {
     icon: topFii,
     text: "Top 25 FII’s",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/fundos-imobiliarios/top-25-fundos-imobiliarios/"
   },
   {
     icon: previdencia,
     text: "Top 30 Previdência",
-    onClick: "onClick"
+    link: "https://conteudos.xpi.com.br/previdencia-privada/recomendacoes/top-previdencia/"
   },
 ];
 
@@ -89,8 +86,8 @@ const Insights = () => {
       <CardsGrid>
         <CardsContainer>
           {
-            cardsData.map(({ text, icon }) => (
-              <InsightsCard text={text} imgSrc={icon} />
+            cardsData.map(({ text, icon, link }) => (
+              <InsightsCard text={text} imgSrc={icon} link={link} />
             ))
           }
         </CardsContainer>
