@@ -139,8 +139,16 @@ const SimulationForms = () => {
           <h2>FINANÇAS PESSOAIS</h2>
           <p>Tenha acesso a uma planilha exclusiva para controlar suas finanças junto com um conteúdo exclusivo da BSI para você!</p>
           <div>
-            <ModalButton>Acesso ao conteúdo</ModalButton>
-            <ModalButton>Baixe agora a planilha</ModalButton>
+            <a href="https://www.youtube.com/channel/UCm6yXA5CXvFj9eFzvR2WyXA" target="_blank" rel="noopener noreferrer">
+              <ModalButton>
+                Acesso ao conteúdo
+              </ModalButton>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/14EXsHDb3_nR6zUgTtCIpIIASJgCAiu5L/edit?usp=sharing&ouid=114895669418201481568&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+              <ModalButton>
+                Baixe agora a planilha
+              </ModalButton>
+            </a>
           </div>
         </Modal.Body>
       </InsideModal>

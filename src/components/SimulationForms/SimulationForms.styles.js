@@ -110,14 +110,20 @@ export const InsideModal = styled(Modal)`
     font-family: 'Inter', sans-serif;
     text-align: center;
   }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
 
-export const ModalButton = styled.button`
+export const ModalButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 360px;
   height: 40px;
   background-color: #161619;
-  color: white;
   border: 1px solid #964CDB;
   text-align: center;
   font-size: 12px;
@@ -127,5 +133,10 @@ export const ModalButton = styled.button`
   margin: 15px;
   :hover {
     background-color: #964CDB;
+  }
+  p {
+    text-decoration: none;
+    color: #fff;
+    
   }
 `;

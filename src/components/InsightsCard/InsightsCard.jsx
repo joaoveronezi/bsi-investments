@@ -1,15 +1,23 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { CardContainer, IconContainer, TextContainer } from "./InsightsCard.styles";
-import acoesImg from "../../assets/icons/v2/acoes.svg";
+import {
+  CardContainer,
+  IconContainer,
+  TextContainer,
+  Link
+} from "./InsightsCard.styles";
 
-const InsightsCard = ({ text, imgSrc }) => (
+const InsightsCard = ({ text, imgSrc, link }) => (
   <CardContainer>
     <IconContainer>
-      <img src={imgSrc} alt="Test" />
+      <Link href={link} key={text}>
+        <img src={imgSrc} alt="Test" />
+      </Link>
     </IconContainer>
     <TextContainer>
-      <p>{text}</p>
+      <Link href={link} key={text}>
+        <p>{text}</p>
+      </Link>
     </TextContainer>
   </CardContainer>
 );

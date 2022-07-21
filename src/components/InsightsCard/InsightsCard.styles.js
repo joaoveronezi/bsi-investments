@@ -32,5 +32,13 @@ export const TextContainer = styled.div`
     line-height: 34px;
     text-align: center;
     color: #FFFFFF;
+    :hover {
+      color: #964CDB;
+    }
   }
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+
 `;
