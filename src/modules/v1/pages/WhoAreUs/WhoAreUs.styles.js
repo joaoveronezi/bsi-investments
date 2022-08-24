@@ -13,10 +13,8 @@ export const WhoAreUsWrapper = styled.div`
   font-family: 'Inter', sans-serif;
   font-style: normal;
   position: relative;
-  @media(max-width: 1024px) {
-    img {
-      width: 150px;
-    }
+  padding-bottom: 120px;
+  @media(max-width: ${sizes.md}) {
     p {
       font-size: 16px;
     }
@@ -28,9 +26,10 @@ export const WhoAreUsWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-  margin-bottom: 50px;
-  margin-top: 50px;
-  h1 {
+  margin: 50px 0px;
+  padding: 0px 0px 64px 100px;
+  display: flex;
+  h2 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -50,7 +49,7 @@ export const TitleWrapper = styled.div`
     margin-top: 120px;
   }
   @media(max-width: ${sizes.sm}) {
-    h1 {
+    h2 {
       font-size: 36px;
     }
     p {
@@ -63,14 +62,20 @@ export const CardsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 55px;
   margin-bottom: 50px;
   padding: 0 35px;
  
+  @media(max-width: ${sizes.xlg}) {
+    gap: 20px;
+  }
   @media(max-width: ${sizes.xxlg}) {
     padding: 0 50px;
   }
   @media(max-width: ${sizes.lg}) {
     flex-direction: column;
+  }
+  @media(max-width: ${sizes.xs}) {
+    gap: 50px;
   }
 `;
