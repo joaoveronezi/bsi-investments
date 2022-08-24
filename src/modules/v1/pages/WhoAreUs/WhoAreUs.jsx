@@ -1,29 +1,51 @@
+import { BannerButton } from "components/Banner/Banner.styles";
 import Card from "components/Card";
 import React from "react";
-import ThiagoPic from "assets/images/thiago.png";
-import FernandoPic from "assets/images/fernando.png";
-import ArturPic from "assets/images/arthur.png";
 
 import {
   WhoAreUsWrapper, CardsContainer, TitleWrapper
 } from "./WhoAreUs.styles";
 
-const WhoAreUs = () => (
-  <WhoAreUsWrapper>
-    <TitleWrapper>
-      <h1>NOSSO TIME</h1>
-    </TitleWrapper>
-    <CardsContainer>
-      <Card
-        name="Arthur Neves Trindade"
-        title="Sócio-fundador | AAI"
-        link1="https://www.linkedin.com/in/arthur-trindade-b73261144/"
-        profilePic={ArturPic}
-      />
-      <Card name="Fernando Hitoshi Watanabe" title="Sócio-fundador | AAI" link1="https://www.linkedin.com/in/fernando-hitoshi-watanabe" profilePic={FernandoPic} />
-      <Card name="Thiago Sartori Cardoso" title="Sócio-fundador | AAI" link1="https://www.linkedin.com/in/thiago-sartori-73b18038" profilePic={ThiagoPic} />
-    </CardsContainer>
-  </WhoAreUsWrapper>
-);
+const WhoAreUs = () => {
+
+  const cardsCopy = [
+    {
+      letter: "E",
+      text: "<p>Não existe um processo de investimentos consolidado, sem uma sólida <span>educação financeira</span></p>",
+    },
+    {
+      letter: "N",
+      text: "<p><span>Não te perturbamos</span> com ligações oferecendo produtos descorrelacionados com seu propósito de investimento.</p>",
+    },
+    {
+      letter: "G",
+      text: "<p><span>Guiamos sua jornada</span>, pois com proposito bem definido e objetivos claros construímos e fazemos essa juntos.</p>",
+    },
+    {
+      letter: "I",
+      text: "<p><span>Investimos com inteligência</span> e tecnologia, resultado de engenharia de dados e inovação em nossos processos de alocação.</p>",
+    },
+    {
+      letter: "E",
+      text: "<p>Nosso foco é na <span>experiência do cliente</span>, pois queremos fazer dessa relação uma construção de longo prazo.</p>",
+    },
+  ];
+  return (
+    <WhoAreUsWrapper>
+      <TitleWrapper>
+        <h2>MÉTODO DA BSI</h2>
+      </TitleWrapper>
+      <CardsContainer>
+        {
+          cardsCopy.map(({ letter, text }) => (
+            <Card letter={letter} text={text} />
+          ))
+        }
+      </CardsContainer>
+
+      <BannerButton type="button" style={{ margin: "0 auto" }}>CONHEÇA NOSSO TIME</BannerButton>
+    </WhoAreUsWrapper>
+  );
+};
 
 export default WhoAreUs;
