@@ -25,7 +25,9 @@ const Home = () => {
         <HomeTitle dangerouslySetInnerHTML={{ __html: MOCK_TITLE[indexTitle] }} />
         <a href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
           <AccountButton type="button">
-            ABRA SUA CONTA
+            <span>
+              ABRA SUA CONTA
+            </span>
           </AccountButton>
         </a>
       </TextWrapper>

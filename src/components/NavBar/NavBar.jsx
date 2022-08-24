@@ -39,6 +39,7 @@ const NavBar = () => {
             <Nav.Link href="#enterprises">EMPRESAS</Nav.Link>
             <Nav.Link href="#investments">INVESTIMENTOS</Nav.Link>
             <Nav.Link href="#contact">CONTATO</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/company/blacksheep-investimentos/jobs" target="_blank" rel="noopener noreferrer">CARREIRAS</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link eventKey={2} href="#link">
