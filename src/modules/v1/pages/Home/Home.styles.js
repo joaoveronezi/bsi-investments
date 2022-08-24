@@ -74,7 +74,10 @@ export const AccountButton = styled.button`
     text-decoration: none;
     color: white;
   }
-  @media(max-width: 1024px) {
+  @media(max-width: ${sizes.xlg}) {
+    span {
+      font-size: 24px;
+    }
     max-width: 300px;
     height: 70px;
   }
