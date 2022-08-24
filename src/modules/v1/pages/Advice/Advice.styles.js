@@ -14,6 +14,10 @@ export const AdviceWrapper = styled.div`
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+
+  @media(max-width: ${sizes.md}) {
+    padding-bottom: 120px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -48,14 +52,15 @@ export const TitleWrapper = styled.div`
   }
 `;
 
-export const CardText = styled.div`
+export const CardContainer = styled.div`
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  width: 100%;
-  max-width: 600px;
+  width: 293px;
+  height: 300px;
+  padding: 15px;
   h2 {
     font-weight: 600;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 58px;
     margin-bottom: -6px;
   }
@@ -69,7 +74,7 @@ export const CardText = styled.div`
     width: 100%;
     max-width: 600px;
   }
-  @media(max-width: 1024px) {
+  @media(max-width: 1280px) {
     h2 {
       font-size: 36px;
     }
@@ -83,11 +88,21 @@ export const CardText = styled.div`
 `;
 
 export const CardsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 60px;
   width: 100%;
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 90px;
+  padding: 0 35px;
+
+  div:not(:last-child) {
+    border-right: 1px solid #964CDB;
+  }
+  @media(max-width: ${sizes.md}) {
+    flex-wrap: wrap;
+    div {
+      border: 1px solid #964CDB;
+    }
+  }
 `;
