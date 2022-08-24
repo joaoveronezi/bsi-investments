@@ -1,9 +1,58 @@
 /* eslint-disable import/named */
 import React from "react";
 import dividerIcon from "assets/icons/divider.svg";
+import { BannerButton } from "components/Banner/Banner.styles";
 import {
-  AdviceWrapper, CardText, CardsWrapper, TitleWrapper
+  AdviceWrapper, CardContainer, CardsWrapper, TitleWrapper
 } from "./Advice.styles";
+
+const adviceItems = [
+  {
+    title: "Journey",
+    subTitle: "Assessoria até 250 mil em investimentos",
+    topics: [
+      "Conteúdos exclusivos",
+      "Planilha para organização financeira",
+      "Atendimento sob-demanda",
+    ]
+  }, {
+    title: "Exclusiva",
+    subTitle: "Assessoria até um milhão em investimentos",
+    topics: [
+      "Follow - Up mensal",
+      "Revisão trimestral",
+      "Estudos e atendimento personalizado",
+    ]
+  },
+  {
+    title: "Private",
+    subTitle: "Assessoria acima de um milhão em investimentos",
+    topics: [
+      "Follow-Up mensal",
+      "Revisão mensal",
+      "Selo de Investidor Qualificado",
+    ]
+  },
+  {
+    title: "Black",
+    subTitle: "Assessoria acima de 10 milhões em investimentos",
+    topics: [
+      "Follow-Up",
+      "Revisão mensal",
+      "Produtos ultrahigh do mercado",
+      "Selo de Investidor Profissional",
+    ]
+  },
+  {
+    title: "Empresas",
+    subTitle: "Assessoria especializada para sua empresa",
+    topics: [
+      "Follow-Up mensal",
+      "Soluções personalizadas",
+      "Produtos Exclusivos para PJ",
+    ]
+  },
+];
 
 const Advice = () => (
   <AdviceWrapper id="advice" style={{ backgroundImage: "url(resources/images/assesoria.jpg)" }}>
@@ -12,50 +61,22 @@ const Advice = () => (
       <p>Escolha a assessoria alinhada a seu momento de vida</p>
     </TitleWrapper>
     <CardsWrapper>
-      <CardText>
-        <h2>Private</h2>
-        <p>Assessoria a partir de 1 milhão em investimentos</p>
-        <img src={dividerIcon} alt="divider" />
-        <p>
-          Times de especialistas que buscam soluções
-          sofisticadas alinhadas a suas estratégias de investimentos
-        </p>
-      </CardText>
-      <CardText>
-        <h2>Alta renda</h2>
-        <p>Assessoria entre R$ 500 mil e R$ 1 milhão  em  investimentos</p>
-        <img src={dividerIcon} alt="divider" />
-        <p>
-          Um acompanhamento premium. As melhores alternativas de investimento do mercado financeiro.
-        </p>
-      </CardText>
-      <CardText>
-        <h2>Exclusivo</h2>
-        <p>Assessoria entre R$ 250 mil e R$ 500 mil em investimentos</p>
-        <img src={dividerIcon} alt="divider" />
-        <p>
-          Proximidade é a palavra-chave. Aqui você conta com um
-          acompanhamento individual, além da carteira personalizada alinhada a seus objetivos.
-        </p>
-      </CardText>
-      <CardText>
-        <h2>Sob demanda</h2>
-        <p>Assessoria entre R$ 100 mil e R$ 250 mil em investimentos</p>
-        <img src={dividerIcon} alt="divider" />
-        <p>
-          Nós preocupamos com seu futuro. Venha conhecer a nossa assessoria com formato ágil
-          e dinâmico. Se precisar, entre em contato com nossos canais de atendimento.
-        </p>
-      </CardText>
+      {adviceItems.map(({ title, subTitle, topics }) => (
+        <CardContainer>
+          <h2>{title}</h2>
+          <p>{subTitle}</p>
+          <img src={dividerIcon} alt="divider" />
+          <ul>
+            {topics.map((element) => (
+              <li>{element}</li>
+            ))}
+          </ul>
+        </CardContainer>
+      ))}
     </CardsWrapper>
-    <CardText style={{ marginBottom: window.innerWidth <= 1440 ? "100px" : "0" }}>
-      <h2>Digital</h2>
-      <p>Assessoria digital a partir de R$ 10 mil reais em investimentos</p>
-      <img src={dividerIcon} alt="divider" />
-      <p>
-        A melhor experiência XP através da melhor plataforma de investimentos - site e aplicativo.
-      </p>
-    </CardText>
+
+    <BannerButton type="button" style={{ margin: "0 auto" }}>ENTRE EM CONTATO</BannerButton>
+
   </AdviceWrapper>
 );
 
