@@ -5,8 +5,8 @@ export const WhatsappButtonWrapper = styled.div`
   background-color: #128C7E;
   border-radius: 50%;
   z-index: 10000;
-  right: 30px;
-  bottom: 50%;
+  right: 10px;
+  bottom: 6%;
   width: 80px;
   height: 80px;
   display: flex;

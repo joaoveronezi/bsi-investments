@@ -10,6 +10,20 @@ export const BannerWrapper = styled.div`
   flex-direction: column;
   color: white;
   gap: 20px;
+  padding: 15px;
+`;
+
+export const InformationBanner = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 80px;
+  @media(max-width: ${sizes.lg}) {
+   flex-direction: column;
+   gap: 30px;
+  }
 `;
 
 export const BannerTitle = styled.h2`
@@ -26,12 +40,15 @@ export const BannerTitle = styled.h2`
 `;
 
 export const BannerDisclaimer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
   width: 50%;
+  padding: 14px;
   @media(max-width: ${sizes.sm}) {
     width: 100%;
     padding: 0 15px;
@@ -62,5 +79,12 @@ export const BannerButton = styled.button`
     height: 60px;
     font-size: 15px;
 
+  }
+`;
+
+export const ImageBanner = styled.div`
+  img {
+    max-width: 100%;
+    height: auto; 
   }
 `;

@@ -47,7 +47,9 @@ const SimulationForms = () => {
     const monthlyProfit = (Math.pow((1 + (annualProfitability / 100)), (1 / numberOfMonths)) - 1) * 100;
     const monthlyProfitInPercent = parseFloat((monthlyProfit / 100).toFixed(3));
 
-    const futureValue = (monthlyInvestment * Math.pow((1 + monthlyProfitInPercent), numberOfMonths)) + initialInvestment;
+    const teste = monthlyInvestment * numberOfMonths;
+
+    const futureValue = (initialInvestment * Math.pow((1 + monthlyProfitInPercent), numberOfMonths)) + teste;
 
     setSimulationValues({
       monthlyProfitability: `${monthlyProfit.toFixed(3)}%`,

@@ -38,7 +38,7 @@ const WhoAreUs = () => {
       <CardsContainer>
         {
           cardsCopy.map(({ letter, text }) => (
-            <Card letter={letter} text={text} />
+            <Card key={text} letter={letter} text={text} />
           ))
         }
       </CardsContainer>

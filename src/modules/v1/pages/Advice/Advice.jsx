@@ -62,13 +62,13 @@ const Advice = () => (
     </TitleWrapper>
     <CardsWrapper>
       {adviceItems.map(({ title, subTitle, topics }) => (
-        <CardContainer>
+        <CardContainer key={title}>
           <h2>{title}</h2>
           <p>{subTitle}</p>
           <img src={dividerIcon} alt="divider" />
           <ul>
             {topics.map((element) => (
-              <li>{element}</li>
+              <li key={element}>{element}</li>
             ))}
           </ul>
         </CardContainer>

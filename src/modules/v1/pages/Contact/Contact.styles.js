@@ -15,6 +15,7 @@ export const ContactWrapper = styled.div`
   @media(max-width: ${sizes.md}) {
     flex-direction: column;
     justify-content: center;
+    padding: 15px;
   }
 `;
 

@@ -42,6 +42,11 @@ export const TextWrapper = styled.div`
   @media(max-width: ${sizes.lg}) {
     margin: 0;
   }
+  @media(max-width: ${sizes.md}) {
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const LetterWrapper = styled.div`

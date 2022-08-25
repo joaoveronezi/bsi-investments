@@ -6,6 +6,7 @@ import Contact from "modules/v1/pages/Contact";
 import Home from "modules/v1/pages/Home";
 import Investments from "modules/v1/pages/Investments";
 import WhoAreUs from "modules/v1/pages/WhoAreUs";
+import FAQ from "modules/v2/pages/FAQ";
 import React from "react";
 
 const V1Routes = () => (
@@ -18,6 +19,7 @@ const V1Routes = () => (
     <Banner />
     <Investments />
     <Contact />
+    <FAQ />
   </>
 );
 

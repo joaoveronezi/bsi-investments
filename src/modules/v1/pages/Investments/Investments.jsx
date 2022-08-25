@@ -22,8 +22,8 @@ const CERTIFICADO_INFO = "Diversificação e acesso a novos mercados, tudo em um
 
 const Investments = () => (
   <InvestmentsWrapper id="investments">
-    <TitleWrapper style={{ marginBottom: "50px", marginTop: window.innerWidth <= 1440 ? "100px" : "0" }}>
-      <h1>INVESTIMENTOS</h1>
+    <TitleWrapper style={{ marginBottom: "50px", marginTop: window.innerWidth <= 1440 ? "100px" : "0", padding: "0px" }}>
+      <h2>INVESTIMENTOS</h2>
     </TitleWrapper>
     <CardsWrapper>
       <CardModal info={ACOES_INFO} imageSRC={ACOES_IMG} title="Ações" />
