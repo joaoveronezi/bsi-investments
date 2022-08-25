@@ -85,7 +85,7 @@ export const AboutTitle = styled.h3`
     font-size: 36px;
   }
 `;
-export const AboutText = styled.p`
+export const AboutText = styled.div`
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 300;

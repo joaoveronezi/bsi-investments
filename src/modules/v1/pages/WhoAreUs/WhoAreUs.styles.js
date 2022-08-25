@@ -49,6 +49,7 @@ export const TitleWrapper = styled.div`
     margin-top: 120px;
   }
   @media(max-width: ${sizes.sm}) {
+    padding: 30px;
     h2 {
       font-size: 36px;
     }

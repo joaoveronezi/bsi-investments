@@ -47,6 +47,7 @@ export const TitleWrapper = styled.div`
       font-size: 36px;
     }
     p {
+      padding: 15px;
       font-size: 18px;
     }
   }
