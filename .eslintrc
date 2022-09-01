@@ -18,6 +18,7 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "padded-blocks": 0,
+    "no-param-reassign": 0,
     "import/prefer-default-export": 0,
     "comma-dangle": "off",
     "quotes": [2, "double", "avoid-escape"],

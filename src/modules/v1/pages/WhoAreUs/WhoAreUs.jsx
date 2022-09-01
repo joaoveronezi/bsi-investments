@@ -11,7 +11,7 @@ const WhoAreUs = () => {
   const cardsCopy = [
     {
       letter: "E",
-      text: "<p>Não existe um processo de investimentos consolidado, sem uma sólida <span>educação financeira</span></p>",
+      text: "<p>Não existe um processo de investimentos consolidado, sem uma sólida <span>educação financeira.</span></p>",
     },
     {
       letter: "N",
@@ -19,7 +19,7 @@ const WhoAreUs = () => {
     },
     {
       letter: "G",
-      text: "<p><span>Guiamos sua jornada</span>, pois com proposito bem definido e objetivos claros construímos e fazemos essa juntos.</p>",
+      text: "<p><span>Guiamos sua jornada</span>, pois com proposito bem definido e objetivos claros construímos e fazemos essa jornada juntos.</p>",
     },
     {
       letter: "I",

@@ -58,6 +58,9 @@ export const TextWrapper = styled.div`
   height: 100%;
   padding: 60px 30px 0 30px;
   margin: 0 auto;
+  @media(max-width: 1024px) {
+    padding: 60px 10px 0 10px;
+  }
 `;
 
 export const Title = styled.h2`

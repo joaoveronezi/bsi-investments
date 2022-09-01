@@ -14,6 +14,9 @@ export const FormsStyled = styled.form`
     border-radius: 0;
     outline: none;
     color: white;
+    @media(max-width: ${sizes.sm}) {
+      height: 70px;
+    }
   }
 `;
 
@@ -55,6 +58,12 @@ export const SimulationWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   margin-top: 40px;
+  span {
+    align-self: flex-start;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+  }
 `;
 
 export const SimulationResults = styled.div`
@@ -71,10 +80,14 @@ export const SimulationResults = styled.div`
     line-height: 34px;
     color: #FFFFFF;
   }
+  @media(max-width: ${sizes.sm}) {
+    max-height: 100px;
+    }
 `;
 
 export const SimulationTextWrapper = styled.div`
   margin: 20px;
+
   p { 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -83,6 +96,11 @@ export const SimulationTextWrapper = styled.div`
     line-height: 34px;
     color: #FFFFFF;
     margin: 0px;
+  }
+  @media(max-width: ${sizes.sm}) {
+    p {
+      font-size: 18px;
+    }
   }
 `;
 

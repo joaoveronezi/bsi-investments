@@ -1,6 +1,6 @@
 import InsightsCard from "components/InsightsCard";
 import React from "react";
-import { MiniChart, SymbolOverview, TickerTape } from "react-ts-tradingview-widgets";
+import { SymbolOverview, TickerTape } from "react-ts-tradingview-widgets";
 import {
   CardsGrid, CardsContainer, InsightsContainer, ChartsContainer, ChartWrapper
 } from "./Insights.styles";
@@ -80,10 +80,18 @@ const Insights = () => {
     },
 
   };
+
+  const teste = [
+    ["Dow Jones", "TVC:DJI"],
+    ["S&P 500", "SP:SPX"],
+    ["IBOVESPA", "BMFBOVESPA:IBOV"]
+  ];
+
   return (
     <InsightsContainer>
       <TickerTape colorTheme="dark" copyrightStyles={styles} />
       <CardsGrid>
+        <h2>Nossas Ferramentas e Conteúdos</h2>
         <CardsContainer>
           {
             cardsData.map(({ text, icon, link }) => (
@@ -95,6 +103,7 @@ const Insights = () => {
       <ChartsContainer>
         <ChartWrapper>
           <SymbolOverview
+            symbols={teste}
             colorTheme="dark"
             autosize
             chartType="candlesticks"
