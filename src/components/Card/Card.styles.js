@@ -33,6 +33,7 @@ export const TextWrapper = styled.div`
   padding: 60px 14px 0px 14px;
   span {
     color: #964CDB;
+    font-weight: bold;
   }
   p {
     text-decoration: none;
@@ -60,6 +61,7 @@ export const LetterWrapper = styled.div`
   background: #964CDB;
   top: -50px;
   span {
+    font-weight: bold;
     font-size: 64px;
   }
 `;

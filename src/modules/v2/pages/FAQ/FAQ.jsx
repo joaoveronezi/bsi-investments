@@ -17,7 +17,7 @@ const FAQCopy = [
         title: "Como funciona a assessoria BSI?",
         items: [
             "Nossa assessoria de investimentos é dividida em 5 etapas:",
-            "1. Provocamos a reflexão do cliente sobre proposito;",
+            "1. Provocamos a reflexão do cliente sobre propósito;",
             "2. Transformamos proposito em objetivos financeiros claros;",
             "3. Estruturamos um estudo de investimentos alinhados com objetivos reais;",
             "4. Fazemos a apresentação do estudo em uma versão inicial para validação e ajustes se for necessário;",

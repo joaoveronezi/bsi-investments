@@ -6,6 +6,7 @@ import {
   Button, FloatingLabel, Form, Modal
 } from "react-bootstrap";
 import iconSrc from "assets/icons/bsi-icon.svg";
+import { compound } from "utils/compound";
 import {
   ButtonWrapper,
   FormsStyled,
@@ -45,15 +46,14 @@ const SimulationForms = () => {
     } = formState;
 
     const monthlyProfit = (Math.pow((1 + (annualProfitability / 100)), (1 / numberOfMonths)) - 1) * 100;
-    const monthlyProfitInPercent = parseFloat((monthlyProfit / 100).toFixed(3));
-
-    const teste = monthlyInvestment * numberOfMonths;
-
-    const futureValue = (initialInvestment * Math.pow((1 + monthlyProfitInPercent), numberOfMonths)) + teste;
+    const monthlyProfitInPercent = parseFloat((monthlyProfit).toFixed(3));
+    const timeInYears = numberOfMonths / 12;
+    const monthlyProfitInYears = (monthlyProfitInPercent / 100) * 12;
+    const compoundInterest = compound(initialInvestment, monthlyInvestment, timeInYears, monthlyProfitInYears, numberOfMonths);
 
     setSimulationValues({
       monthlyProfitability: `${monthlyProfit.toFixed(3)}%`,
-      aproximatedReturn: `R$${futureValue.toFixed(2)}`,
+      aproximatedReturn: `R$${compoundInterest.result}`,
     });
   };
 
@@ -72,9 +72,7 @@ const SimulationForms = () => {
             required
             onChange={(e) => setFormsState({ ...formState, numberOfMonths: +e.target.value })}
           />
-          {/* <Form.Control.Feedback type="invalid">Campo Nome Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
-        {/* Colocar mask nesse campo */}
         <FloatingLabel controlId="dinheiroPorMes" label="Quanto irá guardar todos os meses?" className="mb-3">
           <Form.Control
             type="number"
@@ -83,7 +81,6 @@ const SimulationForms = () => {
             required
             onChange={(e) => setFormsState({ ...formState, monthlyInvestment: +e.target.value })}
           />
-          {/* <Form.Control.Feedback type="invalid">Campo Email Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
         <FloatingLabel controlId="rentabilidadeAnual" label="Rentabilidade esperada no ano? (%)" className="mb-3">
           <Form.Control
@@ -94,7 +91,6 @@ const SimulationForms = () => {
             onChange={(e) => setFormsState({ ...formState, annualProfitability: +e.target.value })}
           />
         </FloatingLabel>
-        {/* <Form.Control.Feedback type="invalid">Campo Telefone Obrigatório</Form.Control.Feedback> */}
         <FloatingLabel controlId="initialInvestment" label="Você já possui um valor para aplicar?" className="mb-3">
           <Form.Control
             type="number"
@@ -103,7 +99,6 @@ const SimulationForms = () => {
             required
             onChange={(e) => setFormsState({ ...formState, initialInvestment: +e.target.value })}
           />
-          {/* <Form.Control.Feedback type="invalid">Campo Mensagem Obrigatório</Form.Control.Feedback> */}
         </FloatingLabel>
         <ButtonWrapper>
           <SubmitButton type="submit">
@@ -126,6 +121,9 @@ const SimulationForms = () => {
             </p>
           </SimulationTextWrapper>
         </SimulationResults>
+        <span>
+          * Estes valores são aproximados baseados em taxa anual esperada
+        </span>
         <ButtonWrapper>
           <SubmitButton style={{ width: "300px" }} onClick={handleShow}>
             Investir Agora

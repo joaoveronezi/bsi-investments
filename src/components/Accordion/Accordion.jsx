@@ -20,8 +20,8 @@ const Accordion = () => (
           <AccordionHeader>NOSSO MÉTODO</AccordionHeader>
         </AccordionComponent.Header>
         <AccordionComponent.Body id="method">
-          Usar de ferramentas de engenharia aplicada a finanças e
-          criar os 4 espaços da inovação dentro do serviço de assessoria de investimentos.
+          Usar de ferramentas de engenharia aplicada a finanças baseadas no conceito E.N.G.I.E,
+          desenvolvido para serviço de assessoria de investimentos.
           <br />
           <br />
           1. Inspirar nossos clientes com as nossas soluções em assessoria de investimentos.

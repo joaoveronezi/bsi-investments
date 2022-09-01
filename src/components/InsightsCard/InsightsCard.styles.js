@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "utils/breakpoints";
 
 export const CardContainer = styled.div`
   display: flex;
@@ -10,6 +11,9 @@ export const CardContainer = styled.div`
   background-color: #000000;
   border: 3px solid #964CDB;
   margin: 25px;
+  @media(max-width: ${sizes.sm}) {
+    margin: 10px;
+  }
 `;
 
 export const IconContainer = styled.div`

@@ -15,7 +15,14 @@ export const CardsGrid = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  h2 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+  }
 `;
 
 export const CardsContainer = styled.div`
@@ -23,6 +30,7 @@ export const CardsContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 `;
 
 export const ChartsContainer = styled.div`
