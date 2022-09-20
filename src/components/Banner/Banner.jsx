@@ -27,12 +27,17 @@ const Banner = () => (
         {bannerCopy.map((element) => (
           <p key={element}>{element}</p>
         ))}
-        <a href="/plataforma" target="_blank" rel="noreferrer">
-          <BannerButton type="button" style={{ marginBottom: "0px" }}>ACESSE AGORA!</BannerButton>
-        </a>
+        <BannerButton
+          type="button"
+          style={{ marginBottom: "0px", marginTop: "20px" }}
+          href="/plataforma"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ACESSE AGORA!
+        </BannerButton>
       </BannerDisclaimer>
     </InformationBanner>
-
   </BannerWrapper>
 
 );

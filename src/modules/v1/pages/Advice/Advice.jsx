@@ -75,7 +75,16 @@ const Advice = () => (
       ))}
     </CardsWrapper>
 
-    <BannerButton type="button" style={{ margin: "0 auto" }}>ENTRE EM CONTATO</BannerButton>
+    <BannerButton
+      href="https://wa.me/message/2YKH5MABSOVOM1"
+      target="_blank"
+      rel="noreferrer"
+      type="button"
+      style={{ margin: "0 auto" }}
+    >
+      ENTRE EM CONTATO
+
+    </BannerButton>
 
   </AdviceWrapper>
 );

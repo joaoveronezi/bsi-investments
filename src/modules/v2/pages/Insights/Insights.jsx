@@ -81,21 +81,69 @@ const Insights = () => {
 
   };
 
-  const teste = [
-    ["Dow Jones", "TVC:DJI"],
-    ["S&P 500", "SP:SPX"],
-    ["IBOVESPA", "BMFBOVESPA:IBOV"]
+  const ticker = [
+    {
+      title: "IBOVESPA",
+      proName: "BMFBOVESPA:BOVA11"
+    },
+    {
+      title: "VALE",
+      proName: "BMFBOVESPA:VALE3"
+    },
+    {
+      title: "PETROBRAS",
+      proName: "BMFBOVESPA:PETR4"
+    },
+    {
+      title: "PETROBRAS",
+      proName: "BMFBOVESPA:B3SA3"
+    },
+    {
+      title: "PETROBRAS",
+      proName: "BMFBOVESPA:ITUB4"
+    },
+    {
+      title: "PETROBRAS",
+      proName: "BMFBOVESPA:BBAS3"
+    }
+  ];
+
+  const titulos = [
+    ["Eurodollar", "CME:GE1!"],
+    ["T-Bond", "CBOT:ZB1!"],
+    ["Ultra T-Bond", "CBOT:UB1!"],
+    ["Euro Bund", "EUREX:FGBL1!"],
+    ["Euro BTP", "EUREX:FBTP1!"],
+    ["Euro BOBL", "EUREX:FGBM1!"]
+  ];
+
+  const forex = [
+    ["EUR/USD", "FX:EURUSD"],
+    ["GBP/USD", "FX:GBPUSD"],
+    ["USD/JPY", "FX:USDJPY"],
+    ["AUD/USD", "FX:AUDUSD"],
+    ["USD/CAD", "FX:USDCAD"],
+    ["BRL", "FX_IDC:BRLUSD"]
+  ];
+
+  const cripto = [
+    ["BITCOIN", "BINANCE:BTCUSDT"],
+    ["ETHERUM", "BINANCE:ETHUSDTPERP_OI"],
+    ["BINANCE COIN", "BINANCE:BNBUSDT"],
+    ["CARDANO", "BINANCE:ADAUSDT"],
+    ["CHILIZ", "BINANCE:CHZUSDT"],
+    ["SOLANA", "BINANCE:SOLUSDT"]
   ];
 
   return (
     <InsightsContainer>
-      <TickerTape colorTheme="dark" copyrightStyles={styles} />
+      <TickerTape colorTheme="dark" copyrightStyles={styles} symbols={ticker} />
       <CardsGrid>
         <h2>Nossas Ferramentas e Conteúdos</h2>
         <CardsContainer>
           {
             cardsData.map(({ text, icon, link }) => (
-              <InsightsCard text={text} imgSrc={icon} link={link} />
+              <InsightsCard text={text} imgSrc={icon} link={link} key={text} />
             ))
           }
         </CardsContainer>
@@ -103,7 +151,7 @@ const Insights = () => {
       <ChartsContainer>
         <ChartWrapper>
           <SymbolOverview
-            symbols={teste}
+            symbols={titulos}
             colorTheme="dark"
             autosize
             chartType="candlesticks"
@@ -116,6 +164,7 @@ const Insights = () => {
         </ChartWrapper>
         <ChartWrapper>
           <SymbolOverview
+            symbols={forex}
             colorTheme="dark"
             autosize
             chartType="candlesticks"
@@ -128,6 +177,7 @@ const Insights = () => {
         </ChartWrapper>
         <ChartWrapper>
           <SymbolOverview
+            symbols={cripto}
             colorTheme="dark"
             autosize
             chartType="candlesticks"

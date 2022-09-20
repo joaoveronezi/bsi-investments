@@ -46,6 +46,9 @@ export const FAQWrapper = styled.div`
     @media (max-width: ${sizes.lg}) {
       font-size: 30px;
     }
+    @media (max-width: ${sizes.sm}) {
+      font-size: 24px;
+    }
   }
 
   .accordion__button[aria-expanded="true"]::before,

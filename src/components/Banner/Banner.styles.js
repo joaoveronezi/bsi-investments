@@ -56,7 +56,7 @@ export const BannerDisclaimer = styled.div`
   }
 `;
 
-export const BannerButton = styled.button`
+export const BannerButton = styled.a`
   width: 380px;
   height: 76px;
   background-color: transparent;
@@ -64,7 +64,9 @@ export const BannerButton = styled.button`
   border: 1px solid white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
   cursor: pointer;
   margin-bottom: 100px;
