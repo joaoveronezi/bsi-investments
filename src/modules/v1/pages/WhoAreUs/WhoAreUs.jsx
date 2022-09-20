@@ -3,11 +3,12 @@ import Card from "components/Card";
 import React from "react";
 
 import {
-  WhoAreUsWrapper, CardsContainer, TitleWrapper
+  WhoAreUsWrapper,
+  CardsContainer,
+  TitleWrapper,
 } from "./WhoAreUs.styles";
 
 const WhoAreUs = () => {
-
   const cardsCopy = [
     {
       letter: "E",
@@ -19,7 +20,7 @@ const WhoAreUs = () => {
     },
     {
       letter: "G",
-      text: "<p><span>Guiamos sua jornada</span>, pois com proposito bem definido e objetivos claros construímos e fazemos essa jornada juntos.</p>",
+      text: "<p><span>Guiamos sua jornada</span>, pois com propósito bem definido e objetivos claros construímos e fazemos essa jornada juntos.</p>",
     },
     {
       letter: "I",
@@ -36,14 +37,19 @@ const WhoAreUs = () => {
         <h2>MÉTODO DA BSI</h2>
       </TitleWrapper>
       <CardsContainer>
-        {
-          cardsCopy.map(({ letter, text }) => (
-            <Card key={text} letter={letter} text={text} />
-          ))
-        }
+        {cardsCopy.map(({ letter, text }) => (
+          <Card key={text} letter={letter} text={text} />
+        ))}
       </CardsContainer>
 
-      <BannerButton type="button" style={{ margin: "0 auto" }}>CONHEÇA NOSSO TIME</BannerButton>
+      <BannerButton
+        style={{ margin: "0 auto" }}
+        href="https://www.shorturl.at/cCD57"
+        target="_blank"
+        rel="noreferrer"
+      >
+        CONHEÇA NOSSO TIME
+      </BannerButton>
     </WhoAreUsWrapper>
   );
 };

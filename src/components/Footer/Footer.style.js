@@ -19,7 +19,7 @@ export const FooterWrapper = styled.div`
     padding: 50px;
   }
   @media(max-width: ${sizes.sm}) {
-    padding:20px;
+    padding: 20px;
   }
 `;
 
@@ -85,14 +85,14 @@ export const SocialMediaWrapper = styled.div`
 `;
 
 export const SocialIconsWrapper = styled.div`
-  width: 100%;
-  max-width: 290px;
   img {
     width: 100%;
     max-width: 50px;
-  }
-  a:not(:last-child) {
-      margin-right: 30px;
+    margin: 0 10px;
+    @media(max-width: ${sizes.sm}) {
+      max-width: 40px;
+      margin: 0 5px;
+    }
   }
 `;
 

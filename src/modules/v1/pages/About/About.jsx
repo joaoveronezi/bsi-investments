@@ -16,11 +16,10 @@ const About = () => (
           que conta com time certificado pela ANCORD e autorizado pela CVM a prestar
           assessoria financeira.
           <h5>O manifesto</h5>
-          O nome "Black sheep" foi escolhido por trazer a ideia de DNA próprio, por remeter
-          a uma estrutura que tem como objetivo se destacar no meio do "rebanho"
-          (bancos e escritórios de assessoria tradicionais), sendo um hub de
-          inovação, cultura e criatividade.
-
+          O nome "Black sheep"
+          foi escolhido por trazer a ideia de DNA próprio,
+          transformando os processos de assessoriade investimento,
+          em hub de inovação e tecnologia, cultura forte e criatividade.
           <h5>Da Engenharia aos Investimentos, o começo desta história </h5>
           Tudo começou nos anos de 2017 e 2018, a partir do interesse por organização de
           finanças pessoais e por crescimento no mercado financeiro. Três sócios se dedicaram aos

@@ -46,8 +46,7 @@ export const IconImage = styled.img`
 export const ContactImage = styled.img`
   width: 100%;
   max-width: 900px;
-  height: 100%;
-  min-height: calc(100vh + 80px);
+  height: calc(100vh + 80px);
   object-fit: cover;
 `;
 

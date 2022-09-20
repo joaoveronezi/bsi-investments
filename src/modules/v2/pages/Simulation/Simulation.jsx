@@ -1,6 +1,6 @@
 import React from "react";
-import iconSRC from "assets/icons/bsi-icon.svg";
-import contactImage from "assets/images/contact.png";
+import iconSRC from "assets/icons/bsi-logo-dark.svg";
+import paperIcon from "assets/images/paper.jpeg";
 import Forms from "components/SimulationForms";
 import {
   ContactWrapper, ImageWrapper, IconImage,
@@ -23,7 +23,7 @@ const Contact = () => {
     <ContactWrapper id="simulation">
       <ImageWrapper>
         <IconImage src={iconSRC} alt="icon" />
-        <ContactImage src={contactImage} alt="contactImage" />
+        <ContactImage src={paperIcon} alt="contactImage" />
       </ImageWrapper>
       <TextWrapper>
         <TypographWrapper>
