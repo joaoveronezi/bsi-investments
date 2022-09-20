@@ -1,7 +1,5 @@
 import React from "react";
-// import iconSRC from "assets/icons/bsi-icon.svg";
 import iconSRC from "assets/icons/bsi-logo-dark.svg";
-import contactImage from "assets/images/contact.png";
 import paperIcon from "assets/images/paper.jpeg";
 import Forms from "components/SimulationForms";
 import {
