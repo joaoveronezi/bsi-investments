@@ -17,16 +17,16 @@ const adviceItems = [
     ]
   }, {
     title: "Exclusiva",
-    subTitle: "Assessoria até um milhão em investimentos",
+    subTitle: "Assessoria até 1 milhão em investimentos",
     topics: [
-      "Follow - Up mensal",
+      "Follow-Up mensal",
       "Revisão trimestral",
       "Estudos e atendimento personalizado",
     ]
   },
   {
     title: "Private",
-    subTitle: "Assessoria acima de um milhão em investimentos",
+    subTitle: "Assessoria acima de 1 milhão em investimentos",
     topics: [
       "Follow-Up mensal",
       "Revisão mensal",
@@ -37,7 +37,7 @@ const adviceItems = [
     title: "Black",
     subTitle: "Assessoria acima de 10 milhões em investimentos",
     topics: [
-      "Follow-Up",
+      "Follow-Up mensal",
       "Revisão mensal",
       "Produtos ultrahigh do mercado",
       "Selo de Investidor Profissional",
