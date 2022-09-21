@@ -19,7 +19,7 @@ const adviceItems = [
     title: "Exclusiva",
     subTitle: "Assessoria até 1 milhão em investimentos",
     topics: [
-      "Follow-Up mensal",
+      "Follow-up Ativo",
       "Revisão trimestral",
       "Estudos e atendimento personalizado",
     ]
@@ -28,7 +28,7 @@ const adviceItems = [
     title: "Private",
     subTitle: "Assessoria acima de 1 milhão em investimentos",
     topics: [
-      "Follow-Up mensal",
+      "Follow-up Ativo",
       "Revisão mensal",
       "Selo de Investidor Qualificado",
     ]
@@ -37,7 +37,7 @@ const adviceItems = [
     title: "Black",
     subTitle: "Assessoria acima de 10 milhões em investimentos",
     topics: [
-      "Follow-Up mensal",
+      "Follow-up Ativo",
       "Revisão mensal",
       "Produtos ultrahigh do mercado",
       "Selo de Investidor Profissional",
@@ -47,7 +47,7 @@ const adviceItems = [
     title: "Empresas",
     subTitle: "Assessoria especializada para sua empresa",
     topics: [
-      "Follow-Up mensal",
+      "Follow-up Ativo",
       "Soluções personalizadas",
       "Produtos Exclusivos para PJ",
     ]
