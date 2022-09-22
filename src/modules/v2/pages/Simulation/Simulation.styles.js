@@ -8,7 +8,7 @@ export const ContactWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  min-height: calc(100vh + 80px);
+  min-height: 100vh;
   position: relative;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -31,13 +31,13 @@ export const IconImage = styled.img`
   height: 100%;
   max-width: 600px;
   max-height: 150px;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
   left: 0;
   right: 0;
   text-align: center;
-  top: 140px;
+  top: 90px;
   @media(max-width: 1024px) {
     max-width: 400px;
   }
@@ -46,7 +46,7 @@ export const IconImage = styled.img`
 export const ContactImage = styled.img`
   width: 100%;
   max-width: 900px;
-  height: calc(100vh + 80px);
+  height: 100vh;
   object-fit: cover;
 `;
 
@@ -55,7 +55,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 60px 30px 0 30px;
+  padding: 30px 30px 0 30px;
   margin: 0 auto;
   @media(max-width: 1024px) {
     padding: 60px 10px 0 10px;
