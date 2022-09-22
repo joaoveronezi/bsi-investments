@@ -32,7 +32,6 @@ const About = () => (
             - Ray Dalio
           </p>
         </AboutText>
-
       </TextWrapper>
       <AccordionContainer>
         <Accordion />

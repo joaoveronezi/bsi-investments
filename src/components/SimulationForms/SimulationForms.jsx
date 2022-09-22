@@ -2,11 +2,9 @@
 /* eslint-disable padded-blocks */
 /* eslint-disable max-len */
 import React, { useState } from "react";
-import {
-  Button, FloatingLabel, Form, Modal
-} from "react-bootstrap";
-import iconSrc from "assets/icons/bsi-icon.svg";
+import { FloatingLabel, Form } from "react-bootstrap";
 import { compound } from "utils/compound";
+import ModalComponent from "components/Modal";
 import {
   ButtonWrapper,
   FormsStyled,
@@ -14,8 +12,6 @@ import {
   SimulationWrapper,
   SimulationResults,
   SimulationTextWrapper,
-  InsideModal,
-  ModalButton,
 } from "./SimulationForms.styles";
 
 const SimulationForms = () => {
@@ -32,7 +28,6 @@ const SimulationForms = () => {
 
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const handleSubmit = (e) => {
@@ -45,11 +40,17 @@ const SimulationForms = () => {
       initialInvestment,
     } = formState;
 
-    const monthlyProfit = (Math.pow((1 + (annualProfitability / 100)), (1 / numberOfMonths)) - 1) * 100;
-    const monthlyProfitInPercent = parseFloat((monthlyProfit).toFixed(3));
+    const monthlyProfit = (Math.pow(1 + annualProfitability / 100, 1 / numberOfMonths) - 1) * 100;
+    const monthlyProfitInPercent = parseFloat(monthlyProfit.toFixed(3));
     const timeInYears = numberOfMonths / 12;
     const monthlyProfitInYears = (monthlyProfitInPercent / 100) * 12;
-    const compoundInterest = compound(initialInvestment, monthlyInvestment, timeInYears, monthlyProfitInYears, numberOfMonths);
+    const compoundInterest = compound(
+      initialInvestment,
+      monthlyInvestment,
+      timeInYears,
+      monthlyProfitInYears,
+      numberOfMonths
+    );
 
     setSimulationValues({
       monthlyProfitability: `${monthlyProfit.toFixed(3)}%`,
@@ -60,11 +61,7 @@ const SimulationForms = () => {
   return (
     <>
       <Form as={FormsStyled} noValidate onSubmit={handleSubmit}>
-        <FloatingLabel
-          controlId="meses"
-          label="Nº de meses"
-          className="mb-3"
-        >
+        <FloatingLabel controlId="meses" label="Nº de meses" className="mb-3">
           <Form.Control
             type="number"
             placeholder="meses"
@@ -73,37 +70,56 @@ const SimulationForms = () => {
             onChange={(e) => setFormsState({ ...formState, numberOfMonths: +e.target.value })}
           />
         </FloatingLabel>
-        <FloatingLabel controlId="dinheiroPorMes" label="Quanto irá guardar todos os meses?" className="mb-3">
+        <FloatingLabel
+          controlId="dinheiroPorMes"
+          label="Quanto irá guardar todos os meses?"
+          className="mb-3"
+        >
           <Form.Control
             type="number"
             placeholder="Somente numeros"
             name="monthlyInvestment"
             required
-            onChange={(e) => setFormsState({ ...formState, monthlyInvestment: +e.target.value })}
+            onChange={(e) => setFormsState({
+              ...formState,
+              monthlyInvestment: +e.target.value,
+            })}
           />
         </FloatingLabel>
-        <FloatingLabel controlId="rentabilidadeAnual" label="Rentabilidade esperada no ano? (%)" className="mb-3">
+        <FloatingLabel
+          controlId="rentabilidadeAnual"
+          label="Rentabilidade esperada no ano? (%)"
+          className="mb-3"
+        >
           <Form.Control
             type="number"
             placeholder="rentabilidadeAnual"
             name="annualProfitability"
             required
-            onChange={(e) => setFormsState({ ...formState, annualProfitability: +e.target.value })}
+            onChange={(e) => setFormsState({
+              ...formState,
+              annualProfitability: +e.target.value,
+            })}
           />
         </FloatingLabel>
-        <FloatingLabel controlId="initialInvestment" label="Você já possui um valor para aplicar?" className="mb-3">
+        <FloatingLabel
+          controlId="initialInvestment"
+          label="Você já possui um valor para aplicar?"
+          className="mb-3"
+        >
           <Form.Control
             type="number"
             placeholder="Valor"
             name="initialInvestment"
             required
-            onChange={(e) => setFormsState({ ...formState, initialInvestment: +e.target.value })}
+            onChange={(e) => setFormsState({
+              ...formState,
+              initialInvestment: +e.target.value,
+            })}
           />
         </FloatingLabel>
         <ButtonWrapper>
-          <SubmitButton type="submit">
-            Calcular
-          </SubmitButton>
+          <SubmitButton type="submit">Calcular</SubmitButton>
         </ButtonWrapper>
       </Form>
       <SimulationWrapper>
@@ -124,34 +140,15 @@ const SimulationForms = () => {
         <span>
           * Estes valores são aproximados baseados em taxa anual esperada
         </span>
-        <ButtonWrapper>
-          <SubmitButton style={{ width: "300px" }} onClick={handleShow}>
-            Acesse o Conteúdo
-          </SubmitButton>
-        </ButtonWrapper>
+        {window.innerWidth < 1024 && (
+          <ButtonWrapper>
+            <SubmitButton style={{ width: "300px" }} onClick={handleShow}>
+              Acesse o Conteúdo
+            </SubmitButton>
+          </ButtonWrapper>
+        )}
       </SimulationWrapper>
-
-      <InsideModal show={show} onHide={handleClose}>
-        <Modal.Header>
-          <img src={iconSrc} alt="BSI icon" />
-        </Modal.Header>
-        <Modal.Body>
-          <h2>FINANÇAS PESSOAIS</h2>
-          <p>Tenha acesso a uma planilha exclusiva para controlar suas finanças junto com um conteúdo exclusivo da BSI para você!</p>
-          <div>
-            <a href="https://t.me/+e177AwAKBgxkNjhh" target="_blank" rel="noopener noreferrer">
-              <ModalButton>
-                Grupo Exclusivo - Welcome BSI
-              </ModalButton>
-            </a>
-            <a href="https://docs.google.com/spreadsheets/d/14EXsHDb3_nR6zUgTtCIpIIASJgCAiu5L/edit?usp=sharing&ouid=114895669418201481568&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
-              <ModalButton>
-                Baixe agora a planilha
-              </ModalButton>
-            </a>
-          </div>
-        </Modal.Body>
-      </InsideModal>
+      <ModalComponent show={show} setShow={setShow} />
     </>
   );
 };

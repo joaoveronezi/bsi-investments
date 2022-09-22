@@ -17,30 +17,6 @@ const Accordion = () => (
       </AccordionComponent.Item>
       <AccordionComponent.Item eventKey="1" id="methodAccordion">
         <AccordionComponent.Header>
-          <AccordionHeader>NOSSO MÉTODO</AccordionHeader>
-        </AccordionComponent.Header>
-        <AccordionComponent.Body id="method">
-          Usar de ferramentas de engenharia aplicada a finanças baseadas no conceito E.N.G.I.E,
-          desenvolvido para serviço de assessoria de investimentos.
-          <br />
-          <br />
-          1. Inspirar nossos clientes com as nossas soluções em assessoria de investimentos.
-          <br />
-          <br />
-          2. Idealizar soluções alinhadas às necessidades de cada pessoa.
-          <br />
-          <br />
-          3. Implementar soluções, com responsabilidade e segurança, para proteger o
-          patrimônio sob custódia.
-          <br />
-          <br />
-          4. Acompanhar é proporcionar aos nossos clientes um follow-up que acompanhe de perto
-          a evolução da carteira e fazer intervenções quando necessário,
-          visando sempre aos objetivos definidos na idealização da soluções de investimento.
-        </AccordionComponent.Body>
-      </AccordionComponent.Item>
-      <AccordionComponent.Item eventKey="2">
-        <AccordionComponent.Header>
           <AccordionHeader>NOSSA MISSÃO</AccordionHeader>
         </AccordionComponent.Header>
         <AccordionComponent.Body>
