@@ -4,6 +4,8 @@ import icon from "assets/icons/bsi-icon.svg";
 import linkedinIcon from "assets/images/linkedin-icon.svg";
 import whatsAppIcon from "assets/images/whats-icon.svg";
 import instaIcon from "assets/images/insta-icon.svg";
+import youtubeIcon from "assets/images/youtube-icon.svg";
+import telegramIcon from "assets/images/telegram-icon.svg";
 
 import {
   DisclaimerTextWrapper,
@@ -29,6 +31,13 @@ const Footer = () => {
         <SocialMediaWrapper>
           <SocialIconsWrapper>
             <a
+              href="https://t.me/+e177AwAKBgxkNjhh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={telegramIcon} alt="Icon" />
+            </a>
+            <a
               href="https://wa.me/message/2YKH5MABSOVOM1"
               target="_blank"
               rel="noreferrer"
@@ -48,6 +57,13 @@ const Footer = () => {
               rel="noreferrer"
             >
               <img src={linkedinIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCm6yXA5CXvFj9eFzvR2WyXA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={youtubeIcon} alt="Icon" />
             </a>
           </SocialIconsWrapper>
           <p>

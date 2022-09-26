@@ -36,17 +36,16 @@ const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#about">SOBRE A BSI</Nav.Link>
             <Nav.Link href="#advice">ASSESSORIA</Nav.Link>
-            <Nav.Link href="#enterprises">EMPRESAS</Nav.Link>
+            <Nav.Link href="#enterprises">PLATAFORMA</Nav.Link>
             <Nav.Link href="#investments">INVESTIMENTOS</Nav.Link>
             <Nav.Link href="#contact">CONTATO</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/company/blacksheep-investimentos/jobs" target="_blank" rel="noopener noreferrer">CARREIRAS</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link eventKey={2} href="#link">
-              <a href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
-                <OpenYourAccountButton>
-                  ABRA SUA CONTA
-                </OpenYourAccountButton>
-              </a>
+            <Nav.Link eventKey={2} href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A73442" target="_blank" rel="noreferrer">
+              <OpenYourAccountButton>
+                ABRA SUA CONTA
+              </OpenYourAccountButton>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

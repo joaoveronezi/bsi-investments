@@ -12,6 +12,9 @@ export const HiddenNavbar = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+  .me-auto {
+    margin: 0 auto !important
+  }
   .navbar-brand {
     img {
       width: 100%;
@@ -20,7 +23,7 @@ export const HiddenNavbar = styled.nav`
     }
     @media(max-width: ${sizes.xlg}) {
       img {
-        margin-left: 50px;
+        margin-left: 25px;
       }
     }
     @media(max-width: ${sizes.lg}) {
@@ -39,10 +42,10 @@ export const HiddenNavbar = styled.nav`
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 29px;
     :not(:last-child) {
-      margin-right: 50px;
+      margin-right: 25px;
       @media(max-width: ${sizes.lg}) {
         margin-right: 24px;  
       }
@@ -67,7 +70,9 @@ export const NormalNav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-
+  .me-auto {
+    margin: 0 auto !important
+  }
   .navbar-brand {
     margin-right: 150px;
       
@@ -78,7 +83,7 @@ export const NormalNav = styled.nav`
     }
     @media(max-width: ${sizes.xlg}) {
       img {
-        margin-left: 50px;
+        margin-left: 25px;
       }
     }
     @media(max-width: ${sizes.lg}) {
@@ -97,10 +102,10 @@ export const NormalNav = styled.nav`
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 29px;
     :not(:last-child) {
-      margin-right: 50px;
+      margin-right: 25px;
       @media(max-width: ${sizes.lg}) {
         margin-right: 24px;
       }
@@ -135,8 +140,8 @@ export const OpenYourAccountButton = styled.button`
     color: white;
   }
   @media(max-width: ${sizes.xlg}) {
-    width: 191px;
-    height: 50px;
+    width: 160px;
+    height: 40px;
   }
   @media(max-width: ${sizes.lg}) {
     width: 160px;

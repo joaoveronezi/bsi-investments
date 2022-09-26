@@ -2,61 +2,66 @@ import styled from "styled-components";
 import sizes from "utils/breakpoints";
 
 export const CardWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  max-width: 480px;
-  max-height: 579px;
+  position: relative;
+  width: 275px;
+  height: 500px;
   border: 1px solid #964CDB;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space;
-  color: white;
+  color: #fff;
   align-content: center;
-  @media(max-width: 1024px) {
-    gap: 60px;
+  @media(max-width: ${sizes.lg}) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+  }
+  @media(max-width: ${sizes.md}) {
     justify-content: space-between;
   }
-`;
-export const ImageWrapper = styled.div`
-  margin-top: 30px;
-  img {
-    width: 100%;
-    height: 100%;
-    max-width: 230px;
-    max-height: 230px;
-    object-fit: contain;
+  @media(max-width: ${sizes.sm}) {
+    height: 200px;
+  }
+  @media(max-width: ${sizes.xs}) {
+    height: 300px;
   }
 `;
 
 export const TextWrapper = styled.div`
-  text-align: center;
-  margin: 70px 0 50px 0;
-  font-size: 36px;
+  padding: 60px 14px 0px 14px;
+  span {
+    color: #964CDB;
+    font-weight: bold;
+  }
+  p {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 24px;
+  }
   @media(max-width: ${sizes.lg}) {
     margin: 0;
   }
+  @media(max-width: ${sizes.md}) {
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
-export const SocialIconsWrapper = styled.div`
-  width: 100%;
+export const LetterWrapper = styled.div`
+  position: absolute;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding-bottom: 30px;
-  img {
-      width: 100%;
-      height: 100%;
-      max-width: 60px;
-      margin-right: 10px;
-    }
-    @media(max-width: ${sizes.lg}) {
-      gap: 15px;
-      padding-bottom: 0;      
-      img {
-        max-width: 40px;
-        padding-bottom: 20px;
-      } 
-    }
+  width: 90px;
+  height: 90px;
+  background: #964CDB;
+  top: -50px;
+  span {
+    font-weight: bold;
+    font-size: 64px;
+  }
 `;
