@@ -81,33 +81,6 @@ const Insights = () => {
 
   };
 
-  const ticker = [
-    {
-      title: "IBOVESPA",
-      proName: "BMFBOVESPA:BOVA11"
-    },
-    {
-      title: "VALE",
-      proName: "BMFBOVESPA:VALE3"
-    },
-    {
-      title: "PETROBRAS",
-      proName: "BMFBOVESPA:PETR4"
-    },
-    {
-      title: "PETROBRAS",
-      proName: "BMFBOVESPA:B3SA3"
-    },
-    {
-      title: "PETROBRAS",
-      proName: "BMFBOVESPA:ITUB4"
-    },
-    {
-      title: "PETROBRAS",
-      proName: "BMFBOVESPA:BBAS3"
-    }
-  ];
-
   const titulos = [
     ["Eurodollar", "CME:GE1!"],
     ["T-Bond", "CBOT:ZB1!"],
@@ -137,7 +110,7 @@ const Insights = () => {
 
   return (
     <InsightsContainer>
-      <TickerTape colorTheme="dark" copyrightStyles={styles} symbols={ticker} />
+      <TickerTape colorTheme="dark" copyrightStyles={styles} />
       <CardsGrid>
         <h2>Nossas Ferramentas e Conteúdos</h2>
         <CardsContainer>
