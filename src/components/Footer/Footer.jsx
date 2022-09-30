@@ -38,7 +38,7 @@ const Footer = () => {
               <img src={telegramIcon} alt="Icon" />
             </a>
             <a
-              href="https://wa.me/message/2YKH5MABSOVOM1"
+              href="https://wa.me/message/WESFBCHTQ6HYC1"
               target="_blank"
               rel="noreferrer"
             >
