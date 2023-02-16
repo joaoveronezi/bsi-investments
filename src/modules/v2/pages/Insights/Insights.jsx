@@ -6,16 +6,15 @@ import {
 } from "./Insights.styles";
 import {
   acoesIC,
-  document,
   familiaTrend,
   familia,
   financasPessoais,
   fundosImobiliarios,
   fundosRecomendados,
   internacional,
-  previdencia,
   rendaFixa,
-  topFii
+  topFii,
+  wallet
 } from "../../../../assets/icons/v2";
 
 const cardsData = [
@@ -65,9 +64,9 @@ const cardsData = [
     link: "https://conteudos.xpi.com.br/fundos-imobiliarios/top-25-fundos-imobiliarios/"
   },
   {
-    icon: previdencia,
-    text: "Top 30 Previdência",
-    link: "https://conteudos.xpi.com.br/previdencia-privada/recomendacoes/top-previdencia/"
+    icon: wallet,
+    text: "Carteira Recomendada XP",
+    link: "https://conteudos.xpi.com.br/carteiras-recomendadas/"
   },
 ];
 

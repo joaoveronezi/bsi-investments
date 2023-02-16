@@ -35,7 +35,7 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const SubmitButton = styled.button`
+export const SubmitButton = styled.a`
   width: 205px;
   height: 60px;
   background-color: #6c3ea4;
@@ -46,9 +46,13 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   font-family: "Inter", sans-serif;
   transition: 0.3s;
-
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   :hover {
     background-color: #964cdb;
+    color: white;
   }
 `;
 

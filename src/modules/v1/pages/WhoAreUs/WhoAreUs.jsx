@@ -44,7 +44,7 @@ const WhoAreUs = () => {
 
       <BannerButton
         style={{ margin: "0 auto" }}
-        href="https://www.shorturl.at/cCD57"
+        href="https://www.shorturl.at/yFMR7"
         target="_blank"
         rel="noreferrer"
       >

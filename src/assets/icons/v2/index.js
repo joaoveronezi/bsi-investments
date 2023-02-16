@@ -6,7 +6,7 @@ import financasPessoais from "./financas-pessoais.svg";
 import fundosImobiliarios from "./fundos-imobiliarios.svg";
 import fundosRecomendados from "./fundos-recomendados.svg";
 import internacional from "./internacional.svg";
-import previdencia from "./previdencia.svg";
+import wallet from "./wallet.svg";
 import rendaFixa from "./renda-fixa.svg";
 import topFii from "./top-fii.svg";
 import whatsIcon from "./whats-icon.svg";
@@ -20,7 +20,7 @@ export {
   fundosImobiliarios,
   fundosRecomendados,
   internacional,
-  previdencia,
+  wallet,
   rendaFixa,
   topFii,
   whatsIcon

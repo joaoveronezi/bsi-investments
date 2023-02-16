@@ -11,9 +11,9 @@ import {
 
 const bannerCopy = [
   "A Black Sheep possui, além dos modelos de assessoria de investimento, uma super plataforma de conteúdos selecionados a dedo para ajudar na sua jornada nos investimentos.",
-  "A plataforma da BSI traz conteúdos atualizados sobre educação financeira, ações, fundos imobiliários, fundos de investimentos, previdência privada, tudo para ajudar investidores  que estão no começo de sua jornada.",
+  "A plataforma da BSI traz conteúdos atualizados sobre educação financeira, ações, fundos imobiliários, fundos de investimentos, tudo para ajudar investidores que estão no começo de sua jornada.",
   "Use nosso painel de cotações, para ficar antenado nos principais ativos ligados ao mercado brasileiro e ao mundial.",
-  "Tire sua curiosidade e use nosso simulador de rentabilidade e baixe nossos conteúdos e nossa planilha de controle financeiro!",
+  "Tire sua curiosidade baixe nossos conteúdos e nossa planilha de controle financeiro!",
 ];
 
 const Banner = () => (

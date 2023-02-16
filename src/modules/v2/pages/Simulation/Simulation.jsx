@@ -29,17 +29,6 @@ const Contact = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
 
-  const FormsComponent = () => {
-    if (window.innerWidth < 540) {
-      return (
-        <FormsWrapper>
-          <Forms />
-        </FormsWrapper>
-      );
-    }
-    return <Forms />;
-  };
-
   const buttonStyle = {
     position: "absolute",
     left: "0",
@@ -70,11 +59,19 @@ const Contact = () => {
           <TypographWrapper>
             <Title>SIMULE SEU INVESTIMENTO</Title>
             <Tooltip>
-              Preencha os campos abaixo que iremos calcular a sua rentabilidade
-              ao final.
+              Acesse agora o simulador da xp investimentos:
             </Tooltip>
           </TypographWrapper>
-          <FormsComponent />
+          <ButtonWrapper>
+            <SubmitButton
+              style={{ width: "300px" }}
+              href="https://www.xpi.com.br/simulador-de-investimento/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Acesse Simulador
+            </SubmitButton>
+          </ButtonWrapper>
         </TextWrapper>
       </ContactWrapper>
       <ModalComponent show={show} setShow={setShow} />
