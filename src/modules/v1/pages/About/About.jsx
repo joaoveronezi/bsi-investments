@@ -12,7 +12,7 @@ const About = () => (
       <TextWrapper>
         <AboutTitle>Sobre nós</AboutTitle>
         <AboutText>
-          A Black Sheep Investimentos é uma assessoria credenciada à XP Investimentos
+          A BSI é uma assessoria credenciada à XP Investimentos
           que conta com time certificado pela ANCORD e autorizado pela CVM a prestar
           assessoria financeira.
           <h5>O manifesto</h5>
