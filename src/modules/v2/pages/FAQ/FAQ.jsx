@@ -11,7 +11,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 const FAQCopy = [
     {
         title: "Porque ter um assessor e não fazer direto na XP?",
-        items: ["A Black Sheep Investimentos é um escritório credenciado a XP. O assessor BSI consegue trazer as melhores soluções, pois conforme nosso processo de jornada guiada conseguimos mapear as reais necessidades dos nossos clientes."]
+        items: ["A BSI é um escritório credenciado a XP. O assessor BSI consegue trazer as melhores soluções, pois conforme nosso processo de jornada guiada conseguimos mapear as reais necessidades dos nossos clientes."]
     },
     {
         title: "Como funciona a assessoria BSI?",
