@@ -9,7 +9,7 @@ import {
 const adviceItems = [
   {
     title: "Digital",
-    subTitle: "Assessoria até 250 mil em investimentos",
+    subTitle: "Assessoria até 300 mil em investimentos",
     topics: [
       "Conteúdos exclusivos",
       "Planilha para organização financeira",
