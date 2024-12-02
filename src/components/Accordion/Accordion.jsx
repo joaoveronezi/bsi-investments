@@ -20,7 +20,6 @@ const Accordion = () => (
           <AccordionHeader>NOSSA MISSÃO</AccordionHeader>
         </AccordionComponent.Header>
         <AccordionComponent.Body>
-          O tradeoff do tempo é a chave do sucesso.
           Nosso compromisso é trazer a clareza das informações para bom plano,
           para que nossos clientes tornem realidade seus planos para o futuro.
         </AccordionComponent.Body>
