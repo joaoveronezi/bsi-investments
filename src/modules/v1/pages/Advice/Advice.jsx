@@ -17,7 +17,7 @@ const adviceItems = [
     ]
   }, {
     title: "Exclusiva",
-    subTitle: "Assessoria até 3 milhão em investimentos",
+    subTitle: "Assessoria acima de 300 mil em investimentos",
     topics: [
       "Follow-up Ativo",
       "Revisão trimestral",
