@@ -15,7 +15,7 @@ const About = () => (
           A BSI é uma assessoria credenciada à XP Investimentos
           que conta com time certificado pela ANCORD e autorizado pela CVM a prestar
           assessoria financeira.
-          <h5>O Experiência </h5>
+          <h5>O Experiência do cliente </h5>
           Acreditamos que a sua jornada de investimento deve ser personalizada e transparente.
           Nosso compromisso é oferecer uma experiência única, com atendimento individualizado e
           soluções sob medida para as suas necessidades. Valorizamos a construção de relações de 
