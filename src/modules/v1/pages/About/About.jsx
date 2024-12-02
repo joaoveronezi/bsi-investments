@@ -15,11 +15,11 @@ const About = () => (
           A BSI é uma assessoria credenciada à XP Investimentos
           que conta com time certificado pela ANCORD e autorizado pela CVM a prestar
           assessoria financeira.
-          <h5>O manifesto</h5>
-          O nome "Black sheep"
-          foi escolhido por trazer a ideia de DNA próprio,
-          transformando os processos de assessoriade investimento,
-          em hub de inovação e tecnologia, cultura forte e criatividade.
+          <h5>O Experiência </h5>
+          Acreditamos que a sua jornada de investimento deve ser personalizada e transparente.
+          Nosso compromisso é oferecer uma experiência única, com atendimento individualizado e
+          soluções sob medida para as suas necessidades. Valorizamos a construção de relações de 
+          longo prazo, baseadas em confiança mútua e resultados consistentes.
           <h5>Da Engenharia aos Investimentos, o começo desta história </h5>
           Tudo começou nos anos de 2017 e 2018, a partir do interesse por organização de
           finanças pessoais e por crescimento no mercado financeiro. Três sócios se dedicaram aos
