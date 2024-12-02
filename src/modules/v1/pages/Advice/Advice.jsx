@@ -31,6 +31,7 @@ const adviceItems = [
       "Follow-up Ativo",
       "Revisão mensal",
       "Selo de Investidor Qualificado",
+      "Acesso a linhas de negócios exclusivas",
     ]
   },
   {
