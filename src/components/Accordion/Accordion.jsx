@@ -17,11 +17,16 @@ const Accordion = () => (
       </AccordionComponent.Item>
       <AccordionComponent.Item eventKey="1" id="methodAccordion">
         <AccordionComponent.Header>
-          <AccordionHeader>NOSSA MISSÃO</AccordionHeader>
+          <AccordionHeader>CONHEÇA NOSSO TIME DE ASSESSORES</AccordionHeader>
         </AccordionComponent.Header>
         <AccordionComponent.Body>
-          Nosso compromisso é trazer a clareza das informações para bom plano,
-          para que nossos clientes tornem realidade seus planos para o futuro.
+          <a href="https://www.linkedin.com/in/arthur-trindade-b73261144/">"Arthur Neves Trindade</a>
+          <a href="https://www.linkedin.com/in/fabio-pupo-63608b6a/">Fabio Muller dos Reis de Salles Pupo</a>
+          <a href="https://www.linkedin.com/in/fernando-hitoshi-watanabe/">Fernando Hitoshi Watanabe </a>
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-pereira-silva-825396194/">João Paulo Pereira Silva</a>
+          <a href="https://www.linkedin.com/in/torresxp/">Lucas Torres</a>
+          <a href="https://www.linkedin.com/in/ricardo-ribeiro-385587282/">Ricardo Souza Ribeiro</a>
+          <a href="https://www.linkedin.com/in/ricardo-ribeiro-385587282/">Thiago Sartori Cardoso</a>
         </AccordionComponent.Body>
       </AccordionComponent.Item>
     </AccordionComponent>
