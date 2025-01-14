@@ -1,9 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
 import aboutImage from "assets/images/aboutImage.jpg";
 import Accordion from "components/Accordion";
+import React from "react";
 import {
-  AboutContainer, AboutText, AboutTitle, TextWrapper, Main, Aside, AccordionContainer,
+  AboutContainer, AboutText, AboutTitle,
+  AccordionContainer,
+  Aside,
+  Main,
+  TextWrapper,
 } from "./About.styles";
 
 const About = () => (
@@ -18,7 +22,7 @@ const About = () => (
           <h5>O Experiência do cliente </h5>
           Acreditamos que a sua jornada de investimento deve ser personalizada e transparente.
           Nosso compromisso é oferecer uma experiência única, com atendimento individualizado e
-          soluções sob medida para as suas necessidades. Valorizamos a construção de relações de 
+          soluções sob medida para as suas necessidades. Valorizamos a construção de relações de
           longo prazo, baseadas em confiança mútua e resultados consistentes.
           <h5>Da Engenharia aos Investimentos, o começo desta história </h5>
           Tudo começou nos anos de 2017 e 2018, a partir do interesse por organização de

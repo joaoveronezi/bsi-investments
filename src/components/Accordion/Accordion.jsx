@@ -1,6 +1,6 @@
 import React from "react";
 import { Accordion as AccordionComponent } from "react-bootstrap";
-import { AccordionWrapper, AccordionHeader } from "./Accordion.styles";
+import { AccordionHeader, AccordionWrapper } from "./Accordion.styles";
 
 const Accordion = () => (
   <AccordionWrapper>
@@ -20,7 +20,7 @@ const Accordion = () => (
           <AccordionHeader>CONHEÇA NOSSO TIME DE ASSESSORES</AccordionHeader>
         </AccordionComponent.Header>
         <AccordionComponent.Body>
-          <a href="https://www.linkedin.com/in/arthur-trindade-b73261144/">"Arthur Neves Trindade</a>
+          <a href="https://www.linkedin.com/in/arthur-trindade-b73261144/">Arthur Neves Trindade</a>
           <a href="https://www.linkedin.com/in/fabio-pupo-63608b6a/">Fabio Muller dos Reis de Salles Pupo</a>
           <a href="https://www.linkedin.com/in/fernando-hitoshi-watanabe/">Fernando Hitoshi Watanabe </a>
           <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-pereira-silva-825396194/">João Paulo Pereira Silva</a>
