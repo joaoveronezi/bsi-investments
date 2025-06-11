@@ -1,10 +1,9 @@
 /* eslint-disable arrow-body-style */
 import React, { useState } from "react";
-import { DisclaimerTextWrapper, DisclaimerWrapper, FooterWrapper } from "./Footer.style";
+import { DisclaimerWrapper, FooterWrapper } from "./Footer.style";
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
-  const text = "...existing text...";
 
   const privacyPolicyContent = `
     A sua privacidade é importante para nós. É política do bsiinvestimentos respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site bsiinvestimentos, e outros sites que possuímos e operamos.
@@ -114,9 +113,6 @@ const Footer = () => {
             Política de Privacidade
           </span>
         </p>
-        <DisclaimerTextWrapper>
-          <p>{text}</p>
-        </DisclaimerTextWrapper>
       </DisclaimerWrapper>
       {showPrivacyPolicy && <PrivacyPolicyModal />}
       {showPrivacyPolicy && (
