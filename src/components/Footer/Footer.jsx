@@ -89,7 +89,67 @@ const Footer = () => {
 
   return (
     <FooterWrapper>
-      {/* ...existing code... */}
+      <IconAndAdressWrapper>
+        <IconWrapper>
+          <a href="#home">
+            <img src={icon} alt="Icon" />
+          </a>
+          <p>
+            A BSI é um escritório de
+            Assessoria de Investimento credenciado à XP Investimentos,
+            com foco em atendimento personalizado e alinhado às necessidades de nossos clientes.
+          </p>
+        </IconWrapper>
+        <SocialMediaWrapper>
+          <SocialIconsWrapper>
+            <a
+              href="https://t.me/+e177AwAKBgxkNjhh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={telegramIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://wa.me/message/WESFBCHTQ6HYC1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={whatsAppIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/bsiinvestimentos/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instaIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/bsi-investimentos/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedinIcon} alt="Icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCm6yXA5CXvFj9eFzvR2WyXA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={youtubeIcon} alt="Icon" />
+            </a>
+          </SocialIconsWrapper>
+          <p>
+            Av. Barão Homem de Melo, 4500, Cj. 510
+            <br />
+            Belo Horizonte - Minas Gerais
+            <br />
+            CEP: 30494-270
+            <br />
+            Tel. 3191-5591
+            <br />
+          </p>
+        </SocialMediaWrapper>
+      </IconAndAdressWrapper>
       <DisclaimerWrapper>
         <p>
           <strong>
