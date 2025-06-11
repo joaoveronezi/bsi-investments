@@ -1,6 +1,6 @@
 /* eslint-disable arrow-body-style */
 import React, { useState } from "react";
-// ...existing imports...
+import { DisclaimerTextWrapper, DisclaimerWrapper, FooterWrapper } from "./Footer.style";
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
@@ -43,42 +43,44 @@ const Footer = () => {
   `;
 
   const PrivacyPolicyModal = () => (
-    <div 
+    <div
       style={{
-        display: showPrivacyPolicy ? 'block' : 'none',
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        backgroundColor: 'white',
-        padding: '20px',
-        maxWidth: '800px',
-        maxHeight: '80vh',
-        overflowY: 'auto',
+        display: showPrivacyPolicy ? "block" : "none",
+        position: "fixed",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        backgroundColor: "white",
+        padding: "20px",
+        maxWidth: "800px",
+        maxHeight: "80vh",
+        overflowY: "auto",
         zIndex: 1000,
-        boxShadow: '0 0 10px rgba(0,0,0,0.5)',
-        borderRadius: '8px'
+        boxShadow: "0 0 10px rgba(0,0,0,0.5)",
+        borderRadius: "8px"
       }}
     >
-      <button 
+      <button
+        type="button"
         onClick={() => setShowPrivacyPolicy(false)}
         style={{
-          position: 'absolute',
-          right: '10px',
-          top: '10px',
-          background: 'none',
-          border: 'none',
-          fontSize: '20px',
-          cursor: 'pointer'
+          position: "absolute",
+          right: "10px",
+          top: "10px",
+          background: "none",
+          border: "none",
+          fontSize: "20px",
+          cursor: "pointer"
         }}
       >
         ✕
       </button>
-      <div style={{ 
-        color: '#444', 
-        marginTop: '20px',
-        whiteSpace: 'pre-line' 
-      }}>
+      <div style={{
+        color: "#444",
+        marginTop: "20px",
+        whiteSpace: "pre-line"
+      }}
+      >
         <h2>Política de Privacidade</h2>
         {privacyPolicyContent}
       </div>
@@ -94,23 +96,23 @@ const Footer = () => {
             © BSI uma empresa credenciada da
             XP investimentos.
           </strong>
-          {' '}
+          {" "}
           Todos os direitos reservados.
-          {' '}
-          <a
-            href="#"
+          {" "}
+          <span
+            type="button"
             onClick={(e) => {
               e.preventDefault();
               setShowPrivacyPolicy(true);
             }}
-            style={{ 
-              color: '#fff',
-              textDecoration: 'underline',
-              cursor: 'pointer'
+            style={{
+              color: "#fff",
+              textDecoration: "underline",
+              cursor: "pointer"
             }}
           >
             Política de Privacidade
-          </a>
+          </span>
         </p>
         <DisclaimerTextWrapper>
           <p>{text}</p>
@@ -118,15 +120,15 @@ const Footer = () => {
       </DisclaimerWrapper>
       {showPrivacyPolicy && <PrivacyPolicyModal />}
       {showPrivacyPolicy && (
-        <div 
+        <div
           onClick={() => setShowPrivacyPolicy(false)}
           style={{
-            position: 'fixed',
+            position: "fixed",
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0,0,0,0.5)',
+            backgroundColor: "rgba(0,0,0,0.5)",
             zIndex: 999
           }}
         />
