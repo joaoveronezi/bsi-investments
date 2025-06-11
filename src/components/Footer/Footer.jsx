@@ -1,9 +1,10 @@
 /* eslint-disable arrow-body-style */
 import React, { useState } from "react";
-import { DisclaimerWrapper, FooterWrapper } from "./Footer.style";
+import { DisclaimerTextWrapper, DisclaimerWrapper, FooterWrapper } from "./Footer.style";
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const text = "A BSI Assessor de Investimentos Ltda é uma empresa de assessoria de investimento devidamente registrada na Comissão de Valores Mobiliários (CVM), na formada Resolução CVM nº 178/2023. A BSI Assessor de Investimentos Ltda atua no mercado financeiro credenciada à XP Investimentos CCTVM S/A,o que pode ser verificado através do site da CVM, site da ANCORD  ou através do site da própria XP Investimentos CCTVM S/A (www.xpi.com.br > Encontre um escritório > Selecione abaixo o estado e a cidade que deseja pesquisar > Veja a lista dos agentes autônomos). Na forma da legislação da CVM, o Assessor de Investimento não pode administrar ou gerir o patrimônio de investidores. O Assessor de investimentos é um intermediário e depende da autorização prévia do cliente para realizar operações no mercado financeiro. O investimento em ações é um investimento de risco e rentabilidade passada não é garantia de rentabilidade futura. Na realização de operações com derivativos existe a possibilidade de perdas superiores aos valores investidos, podendo resultar em significativas perdas patrimoniais. Para informações e dúvidas, favor contatar seu Assessor de Investimentos. Para reclamações, favor contatar a Ouvidoria da XP Investimentos no telefone nº0800-722-3730.";
 
   const privacyPolicyContent = `
     A sua privacidade é importante para nós. É política do bsiinvestimentos respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site bsiinvestimentos, e outros sites que possuímos e operamos.
@@ -113,6 +114,9 @@ const Footer = () => {
             Política de Privacidade
           </span>
         </p>
+        <DisclaimerTextWrapper>
+          <p>{text}</p>
+        </DisclaimerTextWrapper>
       </DisclaimerWrapper>
       {showPrivacyPolicy && <PrivacyPolicyModal />}
       {showPrivacyPolicy && (
