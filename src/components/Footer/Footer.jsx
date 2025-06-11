@@ -1,10 +1,20 @@
 /* eslint-disable arrow-body-style */
+import icon from "assets/icons/bsi-icon.svg";
+import instaIcon from "assets/images/insta-icon.svg";
+import linkedinIcon from "assets/images/linkedin-icon.svg";
+import telegramIcon from "assets/images/telegram-icon.svg";
+import whatsAppIcon from "assets/images/whats-icon.svg";
+import youtubeIcon from "assets/images/youtube-icon.svg";
 import React, { useState } from "react";
-import { DisclaimerTextWrapper, DisclaimerWrapper, FooterWrapper } from "./Footer.style";
+import {
+  DisclaimerTextWrapper,
+  DisclaimerWrapper,
+  FooterWrapper, IconAndAdressWrapper, IconWrapper, SocialIconsWrapper, SocialMediaWrapper,
+} from "./Footer.style";
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
-  const text = "A BSI Assessor de Investimentos Ltda é uma empresa de assessoria de investimento devidamente registrada na Comissão de Valores Mobiliários (CVM), na formada Resolução CVM nº 178/2023. A BSI Assessor de Investimentos Ltda atua no mercado financeiro credenciada à XP Investimentos CCTVM S/A,o que pode ser verificado através do site da CVM, site da ANCORD  ou através do site da própria XP Investimentos CCTVM S/A (www.xpi.com.br > Encontre um escritório > Selecione abaixo o estado e a cidade que deseja pesquisar > Veja a lista dos agentes autônomos). Na forma da legislação da CVM, o Assessor de Investimento não pode administrar ou gerir o patrimônio de investidores. O Assessor de investimentos é um intermediário e depende da autorização prévia do cliente para realizar operações no mercado financeiro. O investimento em ações é um investimento de risco e rentabilidade passada não é garantia de rentabilidade futura. Na realização de operações com derivativos existe a possibilidade de perdas superiores aos valores investidos, podendo resultar em significativas perdas patrimoniais. Para informações e dúvidas, favor contatar seu Assessor de Investimentos. Para reclamações, favor contatar a Ouvidoria da XP Investimentos no telefone nº0800-722-3730.";
+  const text = "A BSI Assessor de Investimentos Ltda, inscrita sob o CNPJ: 42.914.651/0001-37 é uma empresa de Assessoria de Investimento devidamente registrada na Comissão de Valores Mobiliários na forma da Resolução CVM 178/23 (“Sociedade”), que mantém contrato de distribuição de produtos financeiros com a XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. (“XP”) e pode, por conta e ordem dos seus clientes, operar no mercado de capitais segundo a legislação vigente. Na forma da legislação da CVM, o Assessor de Investimento não pode administrar ou gerir o patrimônio de investidores. O investimento em ações é um investimento de risco e rentabilidade passada não é garantia de rentabilidade futura. Na realização de operações com derivativos existe a possibilidade de perdas superiores aos valores investidos, podendo resultar em significativas perdas patrimoniais A Sociedade poderá exercer atividades complementares relacionadas aos mercados financeiro, securitário, de previdência e capitalização, desde que não conflitem com a atividade de assessoria de investimentos, podendo ser realizada por meio da pessoa jurídica acima descrita ou por meio de pessoa jurídica terceira. Todas as atividades são prestadas mantendo a devida segregação e em cumprimento ao quanto previsto nas regras da CVM ou de outros órgãos reguladores e autorreguladores. Para informações e dúvidas sobre produtos, contate seu assessor de investimentos. Para reclamações, contate a Ouvidoria da XP pelo telefone 0800 722 3730.";
 
   const privacyPolicyContent = `
     A sua privacidade é importante para nós. É política do bsiinvestimentos respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site bsiinvestimentos, e outros sites que possuímos e operamos.
@@ -160,7 +170,6 @@ const Footer = () => {
           Todos os direitos reservados.
           {" "}
           <span
-            type="button"
             onClick={(e) => {
               e.preventDefault();
               setShowPrivacyPolicy(true);
