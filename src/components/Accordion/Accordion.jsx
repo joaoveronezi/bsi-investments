@@ -32,6 +32,8 @@ const Accordion = () => (
           <a href="https://www.linkedin.com/in/torresxp/" style={{ fontWeight: "bold" }}>CONTATO</a>
           <h5>Ricardo Souza Ribeiro</h5>
           <a href="https://www.linkedin.com/in/ricardo-ribeiro-385587282/" style={{ fontWeight: "bold" }}>CONTATO</a>
+          <h5>Thamara Morais</h5>
+          <a href="https://www.linkedin.com/in/thamaraamorais/" style={{ fontWeight: "bold" }}>CONTATO</a>
           <h5>Thiago Sartori Cardoso</h5>
           <a href="https://www.linkedin.com/in/thiago-sartori-cardoso-73b18038/" style={{ fontWeight: "bold" }}>CONTATO</a>
         </AccordionComponent.Body>
