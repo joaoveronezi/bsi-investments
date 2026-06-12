@@ -22,8 +22,6 @@ const Accordion = () => (
         <AccordionComponent.Body>
           <h5>Arthur Neves Trindade</h5>
           <a href="https://www.linkedin.com/in/arthur-trindade-b73261144/" style={{ fontWeight: "bold" }}>CONTATO</a>
-          <h5>Fabio Muller dos Reis de Salles Pupo</h5>
-          <a href="https://www.linkedin.com/in/fabio-pupo-63608b6a/" style={{ fontWeight: "bold" }}>CONTATO</a>
           <h5>Fernando Hitoshi Watanabe</h5>
           <a href="https://www.linkedin.com/in/fernando-hitoshi-watanabe/" style={{ fontWeight: "bold" }}>CONTATO</a>
           <h5>João Paulo Pereira Silva</h5>
